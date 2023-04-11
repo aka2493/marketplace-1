@@ -4,7 +4,7 @@ import DefaultFooter from "../../components/footer/default";
 import Header1 from "../../components/header/header-1";
 import Hero1 from "../../components/hero/hero-1";
 import BlockGuide from "../../components/block/BlockGuide";
-import Blog from "../../components/blog/Blog3";
+import Blog from "../../components/home-page/Blog3";
 import TourCategories from "../../components/home/home-6/TourCategories";
 import PopularProducts from "./products";
 

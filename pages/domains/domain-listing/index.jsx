@@ -1,10 +1,9 @@
 import Seo from "../../../components/common/Seo";
-import Header11 from "../../../components/header/header-11";
+import Header1 from "../../../components/header/header-1";
 import DefaultFooter from "../../../components/footer/default";
 import TopHeaderFilter from "../../../components/domains/TopHeaderFilter";
 import Pagination from "../../../components/hotel-list/common/Pagination";
 import Sidebar from "../../../components/hotel-list/hotel-list-v4/Sidebar";
-// import MainFilterSearchBox from "../../../components/domains/MainFilterSearchBox";
 import DomainListingCards from "../../../components/domains/FilterDomainCards";
 import SearchBox from "../../../components/searchBox";
 
@@ -16,7 +15,7 @@ const index = () => {
       <div className="header-margin"></div>
 
 
-      <Header11 />
+      <Header1 />
       <section className="section-bg pt-40 pb-40 relative z-5">
         <div className="section-bg__item col-12">
           <img
@@ -33,7 +32,6 @@ const index = () => {
                   Domains
                 </h1>
               </div>
-              {/* <MainFilterSearchBox /> */}
               <SearchBox placeholderText="Search any domain" classes="m-auto w-50 pt-20" />
             </div>
           </div>

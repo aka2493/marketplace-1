@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import Seo from "../../../components/common/Seo";
 import DefaultFooter from "../../../components/footer/default";
-import Header11 from "../../../components/header/header-11";
+import Header1 from "../../../components/header/header-1";
 import FilterTemplateCards from "../../../components/templates/FilterTemplateCards";
 import MainFilterSearchBox from "../../../components/templates/MainFilterSearchBox";
 import DropdownSelelctBar from "../../../components/templates/common/DropdownSelelctBar";
@@ -16,7 +16,7 @@ const templates = () => {
         <>
             <Seo pageTitle="Templates Listing" />
             <div className="header-margin"></div>
-            <Header11 />
+            <Header1 />
 
             <section className="section-bg pt-40 pb-40 relative z-5">
                 <div className="section-bg__item col-12">

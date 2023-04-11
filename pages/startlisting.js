@@ -2,7 +2,9 @@ import dynamic from "next/dynamic";
 import Slider from "react-slick";
 import {useState} from "react";
 import Seo from "../components/common/Seo";
-import DefaultHeader from "../components/header/default-header";
+// import DefaultHeader from "../components/header/default-header";
+import Header1 from "../components/header/header-1";
+
 import DefaultFooter from "../components/footer/default";
 import Link from "next/link";
 import LocationTopBar from "../components/common/LocationTopBar";
@@ -72,7 +74,7 @@ const StartListing = () => {
       <div className="header-margin"></div>
       {/* header top margin */}
 
-      <DefaultHeader />
+      <Header1 />
       {/* End Header 1 */}
 
       <LocationTopBar />

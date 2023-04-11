@@ -8,7 +8,7 @@ import "photoswipe/dist/photoswipe.css";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import toursData from "../../../data/tours";
 import Seo from "../../../components/common/Seo";
-import Header11 from "../../../components/header/header-11";
+import Header1 from "../../../components/header/header-1";
 import Overview from "../../../components/tour-single/Overview";
 import TopBreadCrumb from "../../../components/tour-single/TopBreadCrumb";
 import DefaultFooter from "../../../components/footer/default";
@@ -50,7 +50,7 @@ const DomainDetail = () => {
             <div className="header-margin"></div>
             {/* header top margin */}
 
-            <Header11 />
+            <Header1 />
             {/* End Header 1 */}
 
             <TopBreadCrumb />
@@ -64,18 +64,6 @@ const DomainDetail = () => {
                             <div className="row x-gap-20 y-gap-20 items-center pt-10">
                                 <div className="col-auto">
                                     <div className="d-flex items-center">
-                                        {/* <div className="d-flex x-gap-5 items-center">
-                                            <i className="icon-star text-10 text-yellow-1"></i>
-
-                                            <i className="icon-star text-10 text-yellow-1"></i>
-
-                                            <i className="icon-star text-10 text-yellow-1"></i>
-
-                                            <i className="icon-star text-10 text-yellow-1"></i>
-
-                                            <i className="icon-star text-10 text-yellow-1"></i>
-                                        </div> */}
-
                                         <div className="text-18 text-dark-1">
                                             keywords: <b>Cars near me</b>
                                         </div>
@@ -188,7 +176,6 @@ const DomainDetail = () => {
                                 {/* End prev nav button wrapper */}
                             </div>
 
-                            {/* <h3 className="text-22 fw-500 mt-40">Tour snapshot</h3> */}
                             <div className="mt-40">
                                 <PropertyHighlights />
                             </div>
@@ -243,7 +230,7 @@ const DomainDetail = () => {
                     {/* End .row */}
 
                     <div className="row y-gap-30 pt-40 sm:pt-20 item_gap-x30">
-                        <DomainListingCards divClass={'col-lg-3 col-xl-3 col-sm-6'} itemsCount={4}/>
+                        <DomainListingCards divClass={'col-lg-3 col-xl-3 col-sm-6'} itemsCount={4} />
                     </div>
                     {/* End .row */}
                 </div>
