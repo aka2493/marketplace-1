@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useForm } from "react-hook-form";
+import Image from "next/image"
 
 
 const PitchandSales= () => {
@@ -60,6 +61,7 @@ const PitchandSales= () => {
               <input  required type="text" name="heading"  />
               <label className="lh-1 text-16 text-light-1">Description Heading</label>
             </div>
+           
           </div>
      
 
@@ -83,7 +85,14 @@ const PitchandSales= () => {
           </div>
           <div className="col-md-12 mt-20">
           <span style={{display: 'flex', alignItems: 'center'}}>
-					<img src="/img/startselling/info.svg" width={18} height={18} alt="icon" style={{marginRight: '5px'}} />
+					
+          <Image
+          width={18}
+          height={18}
+          src="/img/startselling/info.svg"
+          alt="image"
+          style={{marginRight: '5px'}}
+        />
           <p className="text-14">If the current bid is closer to Buy Now price,10% will reflect</p>
 				</span>
           
@@ -102,14 +111,22 @@ const PitchandSales= () => {
         </div>
         <div className="col-md-12 mt-20">
         <span style={{display: 'flex', alignItems: 'center'}}>
-        <img src="/img/startselling/info.svg" width={18} height={18} alt="icon" style={{marginRight: '5px'}} />
+        
+        <Image
+        width={18}
+        height={18}
+        src="/img/startselling/info.svg"
+        alt="icon"
+        style={{marginRight: '5px'}}
+       
+      />
         <p className="text-14">If the current bid is closer to Buy Now price,10% will reflect</p>
       </span>
       </div>
         </div>
         <h2 className="text-18 fw-500 mt-10 mb-18">Buy now Price</h2>
           <div className="col-md-8">
-          <div className="form-input ">
+          <div className="form-input">
             <input type="text" required  />
             <label className="lh-1 text-16 text-light-1">
             Enter Buy Now Price
@@ -117,8 +134,15 @@ const PitchandSales= () => {
           </div>
           <div className="col-md-12 mt-20 mb-20">
           <span style={{display: 'flex', alignItems: 'center'}}>
-        <img src="/img/startselling/info.svg" width={18} height={18} alt="icon" style={{marginRight: '5px'}} />
-          <p className="text-14 ">If the current bid is closer to Buy Now price,10% will reflect</p>
+      
+        <Image
+        width={18}
+        height={18}
+        src="/img/startselling/info.svg"
+        alt="image"
+        style={{marginRight: '5px'}}
+      />
+        <p className="text-14 ">If the current bid is closer to Buy Now price,10% will reflect</p>
           </span>
         </div>
           </div>

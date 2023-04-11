@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import Slider from "react-slick";
 import {useState} from "react";
 import Seo from "../components/common/Seo";
@@ -97,7 +98,14 @@ const StartListing = () => {
             <div className="col" key={item.id}>
               <button onClick={() =>handleButtonClick(item.id)} className={selectedButton === item.id ? "selected d-flex flex-column justify-center px-20 py-15 rounded-4 border text-white border-pink bg-pink text-16 lh-14 fw-500 col-12":"d-flex flex-column justify-center px-20 py-15 rounded-4 border-light text-16 lh-14 fw-500 col-12"}
               >
-              <img src={item.img} className="mb-10" width="30"  height="30"/>
+             
+              <Image
+              width={30}
+              height={30}
+              src={item.img}
+              alt="image"
+             className="mb-10"
+            />
                 {item.catName}
               </button>
             </div>

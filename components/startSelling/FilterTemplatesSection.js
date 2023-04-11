@@ -46,7 +46,7 @@ const FilterTemplatesSection = () => {
     <div className="d-flex flex-wrap   sm:justify-center justify-content">
     
       {dropdowns.map((dropdown, index) => (
-        <div className="col-lg-3 col-md-6 mb-4">
+        <div key={index} className="col-lg-3 col-md-6 mb-4">
         <Dropdown key={index} {...dropdown} />
         </div>
       ))}

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import CallToActions from "../../components/common/CallToActions";
 import Seo from "../../components/common/Seo";
 import Header1 from "../../components/header/header-1";
@@ -32,16 +33,37 @@ const sellerInfoscreen= () => {
            
             <div className="justify-center  mt-10" style={{ display: 'flex', alignItems: 'center' }}>
     <div className="mr-10  justify-center text-20 fw-500 text-dark-4">Woodson And Co. Digital Store</div>
-    <img className="mr-10" src="/img/startselling/check.png" width="22px" height="12px" alt="Check Icon" />
+   
+    <Image
+    width={22}
+    height={12}
+    src="/img/startselling/check.png"
+    alt="Check Icon"
+    className="mr-10"
+  />
     <div className="fw-500 text-16 text-black">Verified</div>
 </div>
 <div className="justify-center mt-10 mb-10" style={{ display: 'flex', alignItems: 'center' }}>
-<img className="text-center" src="/img/startselling/avatar.jpg" width={120} height={120}/>
+
+<Image
+    width={120}
+    height={120}
+    src="/img/startselling/avatar.jpg"
+    alt="avatar"
+    className="text-center"
+  />
 </div>
 <div className="d-flex justify-center mb-20">
 <h2 className="text-20 fw-500 text-black lh-1 mr-10">Karry Woodson
 </h2>
-<img src="/img/startselling/watch.svg" width="20px" height="20px"/>
+
+<Image
+    width={20}
+    height={20}
+    src="/img/startselling/watch.svg"
+    alt="watch"
+    
+  />
 </div>
             {/* End text-center */}
            

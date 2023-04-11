@@ -1,4 +1,5 @@
 import {useState,useEffect} from "react";
+import Image from "next/image"
 
 const Promote= () => {
     const [selectedIndex, setSelectedIndex] = useState(null);
@@ -42,13 +43,28 @@ const Promote= () => {
     
     
     <div className="mt-30 d-flex text-center gap-x-2">
-    {divContent.map((item) => (
-        <div className="border relative py-30 px-30 cursor-pointer" style={{ marginRight: item.id === divContent.length - 1 ? 0 : 20 }} onClick={() =>handleClick(item.id)}>
+    {divContent.map((item,index) => (
+        <div key={index} className="border relative py-30 px-30 cursor-pointer" style={{ marginRight: item.id === divContent.length - 1 ? 0 : 20 }} onClick={() =>handleClick(item.id)}>
    
-        <img src={item.img} width={70} height={70}/>
+        
+        <Image
+          width={70}
+          height={70}
+          src={item.img}
+          alt="image"
+          
+        />
         { selectedIndex === item.id && (
-            <img src="/img/startselling/check.png" className="absolute rounded-full" style={{ right: 0, top: 0 }} width={25} height={25}/>
-          )}
+            
+            <Image
+            width={25}
+            height={25}
+            src="/img/startselling/check.png"
+            alt="image"
+            style={{ right: 0, top: 0 }}
+            className="absolute rounded-full"
+          />
+            )}
         
         <div className="text-20 fw-500">{item.heading}</div>
         <div className="text-14 fw-400">{item.content}</div>

@@ -1,5 +1,6 @@
 import {useState,useCallback,useEffect} from 'react';
 import Link from "next/link";
+import Image from "next/image";
 import { useDropzone } from "react-dropzone";
 
 const  UploadDragandDropImages = () =>{
@@ -40,8 +41,16 @@ useEffect(() => {
                   <h6 className="text-15 mt-20 fw-normal">Drop the files here ...</h6>
                 ) : (
                     <div>
-                    <img src="/img/startselling/screenshotupload.png" width="60px" height="60px"/>
-                  <h6 className="text-15 mt-20 fw-normal">
+                   
+                    <Image
+                    
+                  width={60}
+                  height={60}
+                  src="/img/startselling/screenshotupload.png"
+                  alt="image"
+                  
+                />
+                    <h6 className="text-15 mt-20 fw-normal">
                     Drag and Drop Screenshots here or <Link href="" className="text-blue-1 fw-500">Browse</Link> your files
                   </h6>
                   </div>
@@ -56,8 +65,16 @@ useEffect(() => {
                       {fileNames.slice(columnIndex * filesPerColumn, (columnIndex + 1) * filesPerColumn).map((fileName, index) => (
                         <li key={index} className="d-flex align-items-center">
                           <span>{fileName}</span>
-                          <img onClick={() => removeFile(fileName)} src="/img/startselling/close.png" width={20} height={20} className="ml-2 cursor-pointer" />
-                        </li>
+                          
+                          <Image
+                          onClick={() => removeFile(fileName)} src="/img/startselling/close.png"
+                          width={20}
+                          height={20}
+                          className="ml-2 cursor-pointer"
+                          alt="image"
+                          
+                        />
+                          </li>
                       ))}
                     </ul>
                   ))}

@@ -16,7 +16,7 @@ const index = () => {
     
     <div className="sidebar -blog">
     <div className="sidebar__item -no-border">
-    <h5 className="text-20 fw-500 mb-20">Seller's Details</h5>
+    <h5 className="text-20 fw-500 mb-20">Seller&apos;s Details</h5>
     <h6 className="text-16 fw-500">Location</h6>
     <div className="d-flex mt-10">
   
@@ -49,8 +49,18 @@ const index = () => {
       className="h-40  px-24 -dark-1 bg-dark-4 text-white"
      
     >
-    <img className="mr-10" src="/img/startselling/chat.svg" width="15px" height="15px"/>  Chat with seller 
-    </button>
+ <Image
+    className="mr-10" 
+    src="/img/startselling/chat.svg"
+    width={15}
+    height={15}
+
+    alt="image"
+    
+  />  Chat with seller 
+   
+    
+  </button>
     </div>
   </div>
   {/* End RecentPost */}

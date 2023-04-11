@@ -1,6 +1,7 @@
 import { Grid ,Card,Row} from "@nextui-org/react";
 import { useRouter } from 'next/router';
 import Link from "next/link";
+import Image from "next/image";
 import {useState} from "react";
 import VerifyHtml from "./VerifyOwnership/verifyHtml";
 import VerifyTxt from "./VerifyOwnership/verifyTxt";
@@ -66,7 +67,14 @@ const VerifyOwnership= () => {
           <div className="col-md-4 d-flex justify-content-end cursor-pointer "  
           onClick={handleShow} style={{ alignItems: 'center'}}>
          
-          <img src="/img/startselling/close1.png" width={20} height={20} />
+         
+          <Image
+          width={20}
+          height={2}
+          src="/img/startselling/close1.png"
+          alt="image"
+         
+        />
           <h6 className="text-red-1 fw-400 ml-5">Cancel and Exit</h6>
      
           </div>
@@ -89,9 +97,9 @@ const VerifyOwnership= () => {
           </div>
         
           <Grid.Container gap={2}>
-          {cardContent.map((item) => (
+          {cardContent.map((item,index) => (
            
-            <Grid xs={4}>
+            <Grid key ={index} xs={4}>
               <Card isPressable className={`px-0 ${
                 selectedCard === item.id ? "bg-pink text-white" : ""}`}
                 onClick={() => setSelectedCard(item.id)}>
