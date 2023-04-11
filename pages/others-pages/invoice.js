@@ -33,7 +33,8 @@ const Invoice = () => {
                       <Image
                       src="/img/general/logo-dark.svg"
                            
-                            
+                            width={10}
+                            height={10}
                             alt="logo icon"
                             
                           />

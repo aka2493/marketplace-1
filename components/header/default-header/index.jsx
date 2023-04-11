@@ -32,7 +32,8 @@ const Header1 = () => {
                 <Link href="/" className="header-logo mr-20">
                   
                   <Image
-                 
+                 width={10}
+                 height={10}
                   src="/img/general/logo-dark.svg"
                   alt="logo icon"
                   

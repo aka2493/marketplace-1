@@ -29,7 +29,8 @@ const MobileMenu = () => {
         <Link href="/">
       
           <Image
-        
+        width={10}
+        height={10}
           src="/img/general/logo-dark.svg"
           alt="brand"
           
