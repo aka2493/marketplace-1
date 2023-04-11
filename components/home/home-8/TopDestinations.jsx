@@ -42,7 +42,7 @@ const TopDestinations = () => {
           data-aos-delay={item.delayAnimation}
         >
           <Link
-            href="/destinations"
+            href="/"
             className="citiesCard -type-4 d-block text-center"
           >
             <div className="citiesCard__image size-160 rounded-full mx-auto">

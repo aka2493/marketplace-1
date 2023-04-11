@@ -42,7 +42,7 @@ const TourCategories = () => {
           data-aos-delay={item.dealyAimation}
         >
           <Link
-            href="/activity/activity-list-v3"
+            href="/"
             className="tourTypeCard -type-1 d-block rounded-4 bg-blue-1-05 rounded-4"
           >
             <div className="tourTypeCard__content text-center pt-60 pb-24 px-30">

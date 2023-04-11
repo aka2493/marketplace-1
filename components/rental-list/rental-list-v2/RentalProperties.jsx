@@ -47,7 +47,7 @@ const RentalProperties = () => {
           data-aos-delay={item.delayAnimation}
         >
           <Link
-            href={`/rental/rental-single/${item.id}`}
+            href={`/`}
             className="rentalCard -type-1 rounded-4 hover-inside-slider"
           >
             <div className="rentalCard__image">

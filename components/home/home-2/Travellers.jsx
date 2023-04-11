@@ -37,7 +37,7 @@ const Travellers = () => {
         {destinations3.map((item) => (
           <SwiperSlide key={item.id}>
             <Link
-              href="/tour/tour-list-v3"
+              href="/"
               className="citiesCard -type-2"
               data-aos="fade"
               data-aos-delay={item.delayAnimation}

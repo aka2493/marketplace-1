@@ -106,7 +106,7 @@ const TourProperties = () => {
                 <div className="text-14 text-light-1 mt-5">per adult</div>
 
                 <Link
-                  href={`/tour/tour-single/${item.id}`}
+                  href={`/`}
                   className="button py-10 px-24 -dark-1 bg-blue-1 text-white mt-15"
                 >
                   View Detail <div className="icon-arrow-top-right ml-15"></div>

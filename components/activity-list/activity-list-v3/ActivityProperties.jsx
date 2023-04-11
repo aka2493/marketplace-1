@@ -79,7 +79,7 @@ const ActivityProperties = () => {
                 </div>
                 <div className="text-14 text-light-1 mt-5">per adult</div>
                 <Link
-                  href={`/activity/activity-single/${item.id}`}
+                  href={`/`}
                   className="button py-10 px-20 -dark-1 bg-blue-1 text-white mt-10"
                 >
                   View Detail <div className="icon-arrow-top-right ml-15" />

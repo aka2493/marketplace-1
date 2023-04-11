@@ -10,16 +10,11 @@ import {
   SubMenu,
 } from "react-pro-sidebar";
 import {
-  homeItems,
-  blogItems,
   pageItems,
   dashboardItems,
-  categorieMobileItems,
 } from "../../data/mainMenuData";
 import {
-  isActiveLink,
-  isActiveParent,
-  isActiveParentChaild,
+  isActiveLink
 } from "../../utils/linkActiveChecker";
 import Social from "../common/social/Social";
 import ContactInfo from "./ContactInfo";
@@ -49,92 +44,21 @@ const MobileMenu = () => {
       <ProSidebarProvider>
         <Sidebar width="400" backgroundColor="#fff">
           <Menu>
-            <SubMenu label="Home">
-              {homeItems.map((item, i) => (
-                <MenuItem
-                  key={i}
-                  component={
-                    <Link
-                      href={item.routePath}
-                      className={
-                        isActiveLink(item.routePath, router.asPath)
-                          ? "menu-active-link"
-                          : ""
-                      }
-                    />
-                  }
-                >
-                  {item.name}
-                </MenuItem>
-              ))}
-            </SubMenu>
-            {/* End  All Home Menu */}
-
-            <SubMenu label="Categories">
-              {categorieMobileItems.map((item) => (
-                <SubMenu label={item.title} key={item.id}>
-                  {item.menuItems.map((single) => (
-                    <SubMenu label={single.title} key={single.id}>
-                      {single.menuList.map((menu, i) => (
-                        <MenuItem
-                          key={i}
-                          component={
-                            <Link
-                              href={menu.routePath}
-                              className={
-                                isActiveLink(menu.routePath, router.asPath)
-                                  ? "menu-active-link"
-                                  : ""
-                              }
-                            />
-                          }
-                        >
-                          {menu.name}
-                        </MenuItem>
-                      ))}
-                    </SubMenu>
-                  ))}
-                </SubMenu>
-              ))}
-            </SubMenu>
-            {/* End  All Categories Menu */}
-
             <MenuItem
               component={
                 <Link
-                  href="/destinations"
+                  href="/startlisting"
                   className={
-                    router.pathname === "/destinations"
+                    router.pathname === "/startlisting"
                       ? "menu-active-link"
                       : ""
                   }
                 />
               }
             >
-              Desitinations
+              Start Listing
             </MenuItem>
             {/* End  Desitinations Menu */}
-
-            <SubMenu label="Blog">
-              {blogItems.map((item, i) => (
-                <MenuItem
-                  key={i}
-                  component={
-                    <Link
-                      href={item.routePath}
-                      className={
-                        isActiveLink(item.routePath, router.asPath)
-                          ? "menu-active-link"
-                          : ""
-                      }
-                    />
-                  }
-                >
-                  {item.name}
-                </MenuItem>
-              ))}
-            </SubMenu>
-            {/* End  All Blog Menu */}
 
             <SubMenu label="Pages">
               {pageItems.map((item, i) => (

@@ -47,7 +47,7 @@ const ActivityProperties = () => {
           data-aos-delay={item?.delayAnimation}
         >
           <Link
-            href={`/activity/activity-single/${item.id}`}
+            href={`/`}
             className="activityCard -type-1 rounded-4 hover-inside-slider"
           >
             <div className="activityCard__image position-relative">

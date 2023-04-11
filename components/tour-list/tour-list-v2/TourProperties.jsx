@@ -16,7 +16,7 @@ const TourProperties = () => {
           data-aos-delay={item?.delayAnimation}
         >
           <Link
-            href={`/tour/tour-single/${item.id}`}
+            href={`/`}
             className="tourCard -type-1 rounded-4 position-relative"
           >
             <div className="tourCard__image">

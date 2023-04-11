@@ -79,7 +79,7 @@ const HotelTypes = () => {
             data-aos="fade"
             data-aos-delay={item.delayAnimation}
           >
-            <Link href="/rental/rental-list-v2" className="citiesCard -type-2 ">
+            <Link href="/" className="citiesCard -type-2 ">
               <div className="citiesCard__image rounded-4 ratio ratio-23:18">
                 <Image
                   className="img-ratio rounded-4 js-lazy"

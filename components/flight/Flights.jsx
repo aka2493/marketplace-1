@@ -68,7 +68,7 @@ const Flights = () => {
                     </div>
                   </div>
                   <Link
-                    href="/flight/flight-list-v1"
+                    href="/"
                     className="button -outline-blue-1 px-30 h-50 text-blue-1"
                   >
                     View Deal <div className="icon-arrow-top-right ml-15" />

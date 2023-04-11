@@ -32,7 +32,7 @@ const MainFilterSearchBox = () => {
           <div className="button-item h-full">
             <button
               className="button -dark-1 py-15 px-40 h-full col-12 rounded-0 bg-blue-1 text-white"
-              onClick={() => Router.push("/hotel/hotel-list-v5")}
+              onClick={() => Router.push("/")}
             >
               <i className="icon-search text-20 mr-10" />
               Search
