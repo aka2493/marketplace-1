@@ -49,7 +49,7 @@ const Homepage = () => {
                             <div className="sectionTitle -md">
                                 <h2 className="sectionTitle__title">Our Popular Products</h2>
                                 <p className=" sectionTitle__text mt-5 sm:mt-0">
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                    Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
                                 </p>
                             </div>
                         </div>

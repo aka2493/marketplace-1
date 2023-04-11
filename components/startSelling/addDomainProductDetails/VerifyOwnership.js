@@ -105,8 +105,16 @@ const VerifyOwnership= () => {
                 onClick={() => setSelectedCard(item.id)}>
                 <Card.Body>
                 <Row className="flex-end justify-center align-center items-center text-center">
-                <img className="ml-8 iconimage" src={item.img} width={25} height={25}/>
-                  <h6 className="text-16 ml-4 mr-2 fw-500">{item.title}</h6>
+                
+                <Image
+          width={25}
+          height={25}
+          src={item.img}
+          alt="image"
+          className="ml-8"
+         
+        />  
+                <h6 className="text-16 ml-4 mr-2 fw-500">{item.title}</h6>
                   </Row>
                 </Card.Body> 
 

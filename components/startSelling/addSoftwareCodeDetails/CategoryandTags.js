@@ -91,7 +91,7 @@ const CategoryandTags= () => {
               </div>  
               </div> <div  style={{ display: 'flex', alignItems: 'center' }}>
               <h2 className="text-16 text-blue-1 fw-600">Add more users</h2>
-          <img onClick={()=>addUser()} style={{ cursor:"pointer" ,marginLeft: '10px',marginTop: '2px' }} src="/img/startselling/plus.png" width="25px" height="25px"/>
+       
           <Image
           onClick={()=>addUser()}
           style={{ cursor:"pointer" ,marginLeft: '10px',marginTop: '2px' }}
