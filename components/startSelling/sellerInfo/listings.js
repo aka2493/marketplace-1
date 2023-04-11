@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import sellerlistingData from "../../../data/sellerlistingData";
 
-import { hotelsData } from "../../../data/hotels";
+
 import isTextMatched from "../../../utils/isTextMatched";
 import SearchBox from "./../../common/SearchBox"
 
