@@ -16,13 +16,6 @@ const index = () => {
               >
                 Why to code again? Choose from turnkey software code
               </h1>
-              {/* <p
-                className="text-white mt-6 md:mt-10"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                Discover amzaing places at exclusive deals
-              </p> */}
             </div>
             {/* End hero title */}
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Slider from "react-slick";
-import { tourCategories1 } from "../../../data/tourCategories";
+import { tourCategories1 } from "../../data/tourCategories";
 
 const TourCategories = () => {
   var settings = {

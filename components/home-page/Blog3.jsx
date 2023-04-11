@@ -10,7 +10,7 @@ const Blog3 = () => {
           className="col-lg-4 col-sm-6"
           key={item.id}
           data-aos="fade"
-          data-aos-delay={item.delayAnimation}
+        //  data-aos-delay={item.delayAnimation}
         >
           <Link
             href={`/`}

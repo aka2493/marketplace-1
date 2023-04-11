@@ -1,9 +1,5 @@
-import Router from "next/router";
 import { useSelector, useDispatch } from "react-redux";
 import { addCurrentTab } from "../../../features/hero/findPlaceSlice";
-import DateSearch from "../DateSearch";
-import GuestSearch from "./GuestSearch";
-import LocationSearch from "./LocationSearch";
 import SearchBox from "../../searchBox";
 
 const NewSearchBox = () => {

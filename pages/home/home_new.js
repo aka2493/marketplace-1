@@ -2,11 +2,11 @@ import dynamic from "next/dynamic";
 import Seo from "../../components/common/Seo";
 import DefaultFooter from "../../components/footer/default";
 import Header1 from "../../components/header/header-1";
-import Hero1 from "../../components/hero/hero-1";
+import Hero1 from "../../components/home-page/searchComponent";
 import BlockGuide from "../../components/block/BlockGuide";
-import Blog from "../../components/home-page/Blog3";
-import TourCategories from "../../components/home/home-6/TourCategories";
-import PopularProducts from "./products";
+import TourCategories from "../../components/home-page/TourCategories";
+import PopularProducts from "../../components/home-page/products";
+import Blog3 from '../../components/home-page/Blog3';
 
 const Homepage = () => {
     return (
@@ -80,7 +80,7 @@ const Homepage = () => {
                             <div className="sectionTitle -md">
                                 <h2 className="sectionTitle__title">Our Blog</h2>
                                 <p className=" sectionTitle__text mt-5 sm:mt-0">
-                                    These popular destinations have a lot to offer
+                                    These popular destinations have a lot to offer.
                                 </p>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ const Homepage = () => {
                     </div>
 
                     <div className="row y-gap-30 pt-40">
-                        <Blog />
+                        <Blog3 />
                     </div>
 
                 </div>
