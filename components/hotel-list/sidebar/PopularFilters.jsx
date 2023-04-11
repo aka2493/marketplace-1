@@ -1,10 +1,12 @@
 const popularFilters = () => {
   const filters = [
-    { label: "Breakfast Included", count: 92 },
-    { label: "Romantic", count: 45 },
-    { label: "Airport Transfer", count: 21 },
-    { label: "WiFi Included", count: 78 },
-    { label: "5 Star", count: 679 },
+    // { label: "Breakfast Included", count: 92 },
+    // { label: "Romantic", count: 45 },
+    // { label: "Airport Transfer", count: 21 },
+    // { label: "WiFi Included", count: 78 },
+    // { label: "5 Star", count: 679 },
+    { label: "Auction", value: "Auction" },
+    { label: "Non Auction", value: "Non Auction" },
   ];
 
   return (
@@ -20,9 +22,9 @@ const popularFilters = () => {
               <div className="text-15 ml-10">{filter.label}</div>
             </div>
           </div>
-          <div className="col-auto">
+          {/* <div className="col-auto">
             <div className="text-15 text-light-1">{filter.count}</div>
-          </div>
+          </div> */}
         </div>
       ))}
     </>

@@ -77,18 +77,18 @@ const AvatarUploader = () => {
       </div>
 
       <div className="col-auto">
-        <h4 className="text-16 fw-500">Your avatar</h4>
+        <h4 className="text-16 fw-500">Drag & Drop Verification Files Here</h4>
         <div className="text-14 mt-5">
-          PNG or JPG no bigger than 800px wide and tall.
+          or
         </div>
         <div className="d-inline-block mt-15">
           <label
             htmlFor="avatar-upload"
             role="button"
-            className="button h-50 px-24 -dark-1 bg-blue-1 text-white"
+            className="button h-50 px-24 -dark-1 border-blue-1 text-blue-1"
           >
             <i className="icon-upload-file text-20 mr-10" />
-            Browse
+            Upload Here
           </label>
           <input
             type="file"

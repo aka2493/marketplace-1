@@ -34,7 +34,7 @@ const TourCategories = () => {
 
   return (
     <Slider {...settings} arrows={false}>
-      {tourCategories1.slice(8, 13).map((item) => (
+      {tourCategories1.slice(0,5).map((item) => (
         <div
           className="col-xl col-md-4 col-sm-6"
           key={item.id}
@@ -51,7 +51,7 @@ const TourCategories = () => {
                 {item.name}
               </h4>
               <p className="text-light-1 lh-14 text-14 mt-5">
-                {item.tourNumber} Tours From ${item.price}
+                ${item.price}
               </p>
             </div>
           </Link>

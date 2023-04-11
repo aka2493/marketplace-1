@@ -3,21 +3,35 @@ const BlockGuide = () => {
     {
       id: 1,
       icon: "/img/featureIcons/1/1.svg",
-      title: "Best Price Guarantee",
+      title: "List your Products",
       text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
       delayAnim: "100",
     },
     {
       id: 2,
       icon: "/img/featureIcons/1/2.svg",
-      title: "Easy & Quick Booking",
+      title: "Receive Bids",
       text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
       delayAnim: "200",
     },
     {
       id: 3,
       icon: "/img/featureIcons/1/3.svg",
-      title: "Customer Care 24/7",
+      title: "Pay to Traderlo",
+      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+      delayAnim: "300",
+    },
+    {
+      id: 4,
+      icon: "/img/featureIcons/1/2.svg",
+      title: "Delivery",
+      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+      delayAnim: "200",
+    },
+    {
+      id: 5,
+      icon: "/img/featureIcons/1/3.svg",
+      title: "Get paid by Traderlo",
       text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
       delayAnim: "300",
     },
@@ -26,7 +40,7 @@ const BlockGuide = () => {
     <>
       {blockContent.map((item) => (
         <div
-          className="col-lg-3 col-sm-6"
+          className="col-lg-2 col-sm-6"
           data-aos="fade"
           data-aos-delay={item.delayAnim}
           key={item.id}

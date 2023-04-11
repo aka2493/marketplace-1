@@ -98,12 +98,12 @@ export const dashboardItems = [
     routePath: "/dashboard/db-dashboard",
   },
   {
-    name: "Booking History",
-    routePath: "/dashboard/db-booking",
+    name: "Buying Activity",
+    routePath: "/dashboard/db-buying-activity",
   },
   {
-    name: "Wishlist",
-    routePath: "/dashboard/db-wishlist",
+    name: "Seller Activity",
+    routePath: "/dashboard/db-seller-activity",
   },
   {
     name: "Settings",

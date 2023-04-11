@@ -19,7 +19,22 @@ const Slights = () => {
             castle that was first built in 1066 by William the Conqueror.`,
       delayAnimation: "200",
     },
-    
+    {
+      id: 3,
+      img: "/img/backgrounds/3.png",
+      title: "Tower of London",
+      text: ` Learn about British history at the Tower of London, a medieval
+            castle that was first built in 1066 by William the Conqueror.`,
+      delayAnimation: "300",
+    },
+    {
+      id: 4,
+      img: "/img/backgrounds/4.png",
+      title: "Tower Bridge",
+      text: ` Learn about British history at the Tower of London, a medieval
+            castle that was first built in 1066 by William the Conqueror.`,
+      delayAnimation: "400",
+    },
   ];
   return (
     <>

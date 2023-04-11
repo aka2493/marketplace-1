@@ -1,6 +1,8 @@
 .mainSearch {
   position: relative;
   z-index: 2;
+  width: 60%;
+  margin: auto;
 
   @include media-below(lg) {
     width: 100%;
@@ -10,6 +12,24 @@
   .button-grid {
     display: grid;
     grid-template-columns: 1fr 250px 290px auto;
+
+    > * + * {
+      border-left: 1px solid var(--color-border);
+    }
+
+    @include media-below(lg) {
+      grid-template-columns: 1fr;
+
+      > * + * {
+        border-left: 0;
+        border-top: 1px solid var(--color-border);
+      }
+    }
+  }
+
+  .button-grid-d {
+    display: grid;
+    grid-template-columns: 1fr 250px 0px auto;
 
     > * + * {
       border-left: 1px solid var(--color-border);

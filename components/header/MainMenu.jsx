@@ -139,8 +139,11 @@ const MainMenu = ({ style = "" }) => {
           </ul>
         </li>
 
-        <li className={router.pathname === "/contact" ? "current" : ""}>
-          <Link href="/contact">Contact</Link>
+        <li className={router.pathname === "/domains/domain-listing" ? "current" : ""}>
+          <Link href="/domains/domain-listing">Domains</Link>
+        </li>
+        <li className={router.pathname === "/templates/template-listing" ? "current" : ""}>
+          <Link href="/templates/template-listing">Templates</Link>
         </li>
       </ul>
     </nav>

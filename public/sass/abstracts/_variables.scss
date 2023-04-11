@@ -1,5 +1,5 @@
 :root {
-  --font-primary: "DM sans", sans-serif;
+  --font-primary: "DM Sans", sans-serif;
 }
 
 $breakpoints: (
@@ -41,7 +41,9 @@ pink:#e5378b,
   light-1: #697488,
   light-2: #f5f5f5,
   light-3: #fbfcff,
- light-4:#8e8f92,
+  light-5:#eeeff1,
+  light-4:#8e8f92,
+
   blue-1: #3554d1,
   blue-2: #e5f0fd,
 
@@ -69,6 +71,7 @@ pink:#e5378b,
   error-2: #ab3331,
   success-1: #def2d7,
   success-2: #5b7052,
+  stebr-pink:#DB0671,
 );
 
 :root {

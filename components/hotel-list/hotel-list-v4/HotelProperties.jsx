@@ -47,7 +47,7 @@ const HotelProperties = () => {
           data-aos-delay={item.delayAnimation}
         >
           <Link
-            href={`/hotel/hotel-single-v1/${item.id}`}
+            href={`/hotel/hotel-single-v2/${item.id}`}
             className="hotelsCard -type-1 hover-inside-slider"
           >
             <div className="hotelsCard__image">
@@ -81,25 +81,21 @@ const HotelProperties = () => {
 
                 <div className="cardImage__leftBadge">
                   <div
-                    className={`py-5 px-15 rounded-right-4 text-12 lh-16 fw-500 uppercase ${
-                      isTextMatched(item?.tag, "breakfast included")
+                    className={`py-5 px-15 rounded-right-4 text-12 lh-16 fw-500 uppercase ${isTextMatched(item?.tag, "Editor choice")
                         ? "bg-dark-1 text-white"
                         : ""
-                    } ${
-                      isTextMatched(item?.tag, "best seller")
-                        ? "bg-blue-1 text-white"
+                      } ${isTextMatched(item?.tag, "featured")
+                        ? "bg-stebr-pink text-white"
                         : ""
-                    } 
-                    } ${
-                      isTextMatched(item?.tag, "-25% today")
+                      } 
+                    } ${isTextMatched(item?.tag, "-25% today")
                         ? "bg-brown-1 text-white"
                         : ""
-                    } 
-                     ${
-                       isTextMatched(item?.tag, "top rated")
-                         ? "bg-yellow-1 text-dark-1"
-                         : ""
-                     }`}
+                      } 
+                     ${isTextMatched(item?.tag, "premium")
+                        ? "bg-yellow-1 text-dark-1"
+                        : ""
+                      }`}
                   >
                     {item?.tag}
                   </div>
@@ -107,27 +103,22 @@ const HotelProperties = () => {
               </div>
             </div>
             <div className="hotelsCard__content mt-10">
-              <h4 className="hotelsCard__title text-dark-1 text-18 lh-16 fw-500">
-                <span>{item?.title}</span>
-              </h4>
-              <p className="text-light-1 lh-14 text-14 mt-5">
-                {item?.location}
-              </p>
-              <div className="d-flex items-center mt-20">
-                <div className="flex-center bg-blue-1 rounded-4 size-30 text-12 fw-600 text-white">
-                  {item?.ratings}
+              <div className="d-flex items-center lh-14 mb-5">
+                <div className="text-18 text-dark-1 lh-16 fw-500">
+                  {item?.title}
                 </div>
-                <div className="text-14 text-dark-1 fw-500 ml-10">
-                  Exceptional
-                </div>
-                <div className="text-14 text-light-1 ml-10">
-                  {item?.numberOfReviews} reviews
-                </div>
+                <div className="size-10 bg-stebr-pink rounded-full ml-10 mr-10" />
+                <div className="text-18 text-dark-1 lh-16 fw-500">Technology</div>
               </div>
+             
+              <p className="text-light-1 lh-14 text-14 mt-5">
+                Keyword: {item?.keyword}
+              </p>
+            
               <div className="mt-5">
                 <div className="fw-500">
-                  Starting from{" "}
-                  <span className="text-blue-1">US${item?.price}</span>
+                  Price{" "}
+                  <span className="text-blue-1">${item?.price}</span>
                 </div>
               </div>
             </div>

@@ -12,25 +12,20 @@ const index = () => {
             <DateSearch />
           </div>
         </div>
-        {/* End check-in-out */}
       </div>
-      {/* End .col-12 */}
 
       <div className="col-12">
         <GuestSearch />
-        {/* End guest */}
       </div>
-      {/* End .col-12 */}
 
       <div className="col-12">
         <Link
-          href="/hotel/booking-page"
+          href="/domains/domain-listing"
           className="button -dark-1 py-15 px-35 h-60 col-12 rounded-4 bg-blue-1 text-white"
         >
-          Book Now
+          Buy Now
         </Link>
       </div>
-      {/* End .col-12 */}
     </>
   );
 };

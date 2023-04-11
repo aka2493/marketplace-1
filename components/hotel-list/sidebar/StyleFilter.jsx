@@ -1,10 +1,12 @@
 const StyleFilter = () => {
   const checkboxes = [
-    { label: "Budget", count: 92 },
-    { label: "Mid-range", count: 45 },
-    { label: "Luxury", count: 21 },
-    { label: "Family-friendly", count: 78 },
-    { label: "Business", count: 679 },
+    // { label: "Budget", count: 92 },
+    // { label: "Mid-range", count: 45 },
+    // { label: "Luxury", count: 21 },
+    // { label: "Family-friendly", count: 78 },
+    // { label: "Business", count: 679 },
+    { label: "Basic (free)" },
+    { label: "Premium" },
   ];
 
   return (
@@ -21,9 +23,9 @@ const StyleFilter = () => {
             </div>
           </div>
           {/* End col-auto */}
-          <div className="col-auto">
+          {/* <div className="col-auto">
             <div className="text-15 text-light-1">{checkbox.count}</div>
-          </div>
+          </div> */}
         </div>
       ))}
     </>

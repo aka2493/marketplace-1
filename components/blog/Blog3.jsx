@@ -28,8 +28,12 @@ const Blog3 = () => {
               </div>
             </div>
             <div className="mt-20">
-              <h4 className="text-dark-1 text-18 fw-500">{item.title}</h4>
-              <div className="text-light-1 text-15 lh-14 mt-5">{item.date}</div>
+              <h4 className="text-dark-1 text-20 fw-600">| By Admin</h4>
+              <h4 className="text-dark-1 text-18 fw-500 mt-10">Make money easy as Pie</h4>
+              <p className="mt-10 text-light-1 fw-400 text-14">{item.title}</p>
+              <div className="text-light-1 text-15 lh-14 mt-5">
+                <i className="icon-calendar-2 text-18 text-light-1"></i>
+                <span className="ml-10">{item.date}</span></div>
             </div>
           </Link>
         </div>

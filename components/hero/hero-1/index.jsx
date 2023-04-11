@@ -1,28 +1,28 @@
-import MainFilterSearchBox from "./MainFilterSearchBox";
+import NewSearchBox from "./NewSearch";
 
 const index = () => {
   return (
     <section className="masthead -type-1 z-5">
       <div className="masthead__bg">
-        <img alt="image" src="/img/masthead/1/bg.webp" className="js-lazy" />
+        {/* <img alt="image" src="/img/masthead/1/bg.webp" className="js-lazy" /> */}
       </div>
       <div className="container">
         <div className="row justify-center">
           <div className="col-auto">
             <div className="text-center">
               <h1
-                className="text-60 lg:text-40 md:text-30 text-white"
+                className="text-60 lg:text-40 md:text-30 text-dark-1"
                 data-aos="fade-up"
               >
-                Find Next Place To Visit
+                Why to code again? Choose from turnkey software code
               </h1>
-              <p
+              {/* <p
                 className="text-white mt-6 md:mt-10"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
                 Discover amzaing places at exclusive deals
-              </p>
+              </p> */}
             </div>
             {/* End hero title */}
 
@@ -31,9 +31,19 @@ const index = () => {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <MainFilterSearchBox />
+              <NewSearchBox />
             </div>
-            {/* End tab-filter */}
+
+            <div
+              className="text-dark-1 mt-30 md:mt-10 row text-18 d-flex x-gap-30 y-gap-20 justify-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div className="col-auto">#AirBnb React Software</div>
+              <div className="col-auto">#E-commerce MERN Stack</div>
+              <div className="col-auto">#Financial Module for Brokers (PHP based)</div>
+              <div className="col-auto">#Uber like Taxi app for riders (ReactJS)</div>
+            </div>
           </div>
         </div>
       </div>
