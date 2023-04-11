@@ -24,7 +24,7 @@ useEffect(() => {
   // Store the filenames of the uploaded PDF files
   const newFileNames = allowedFiles.map((file) => file.name);
       setFileNames([...fileNames, ...newFileNames]);
-    }, [fileNames]);
+    }, [fileNames,FILETYPE_FORMATS]);
   
     const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop, accept: FILETYPE_FORMATS.join(), });
     

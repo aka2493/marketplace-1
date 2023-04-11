@@ -26,8 +26,17 @@ const index = () => {
       <h6 className="text-16 fw-500 mt-20">Website</h6>
     <div className="d-flex mt-10">
   
-    <img className="mr-10" src="/img/dashboard/sidebar/map.svg" width="22px" height="12px"/>
-      <div className="text-14 fw-500">www.carsme.com</div>
+   
+    <Image
+    className="mr-10" 
+    src="/img/dashboard/sidebar/map.svg"
+    width={22}
+    height={12}
+
+    alt="image"
+    
+  /> 
+    <div className="text-14 fw-500">www.carsme.com</div>
       </div>
 
       <h6 className="text-16 fw-500 mt-20">Other Links</h6>
