@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import Image from "next/image";
 import MultiSelect from '../addTemplateProductDetails/MultiSelect';
 
 const CategoryandTags= () => {
@@ -42,7 +43,7 @@ const CategoryandTags= () => {
           </span>
           </div>
           {users.map((user, index) => (
-            <div>
+            <div key={index}>
          <div className="border mt-20 mb-20" style={{ padding: "36px" }}>
      
           <div className="row">
@@ -91,9 +92,27 @@ const CategoryandTags= () => {
               </div> <div  style={{ display: 'flex', alignItems: 'center' }}>
               <h2 className="text-16 text-blue-1 fw-600">Add more users</h2>
           <img onClick={()=>addUser()} style={{ cursor:"pointer" ,marginLeft: '10px',marginTop: '2px' }} src="/img/startselling/plus.png" width="25px" height="25px"/>
+          <Image
+          onClick={()=>addUser()}
+          style={{ cursor:"pointer" ,marginLeft: '10px',marginTop: '2px' }}
+          width={25}
+          height={25}
+          src="/img/startselling/plus.png"
+          alt="image"
+         
+        />
           {index === 1 &&  (
-            <img onClick={() => removeUser(index)} style={{ cursor:"pointer" ,marginLeft: '10px',marginTop: '2px' }} src="/img/startselling/minus.png" width="23px" height="25px"/>
-          )}
+            
+            <Image
+            onClick={() => removeUser(index)}
+            style={{ cursor:"pointer" ,marginLeft: '10px',marginTop: '2px' }}
+            width={23}
+            height={25}
+            src="/img/startselling/minus.png"
+            alt="image"
+           
+          />
+            )}
           </div>
           </div> ))}
 

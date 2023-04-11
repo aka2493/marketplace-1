@@ -140,7 +140,7 @@ const TrafficandRevenue = () => {
       
 
               <h2 className="text-20 fw-500 mt-40 mb-24">
-       Visits and Views and Proof's
+       Visits and Views and Proof&apos;s
                 </h2>
 
               <UploadDragDropFile/>

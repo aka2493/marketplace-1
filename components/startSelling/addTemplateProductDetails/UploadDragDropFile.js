@@ -1,5 +1,6 @@
 import {useState,useCallback,useEffect} from 'react';
 import Link from "next/link";
+import Image from "next/image"
 import { useDropzone } from "react-dropzone";
 
 const  UploadDragandDrop = () =>{
@@ -40,8 +41,15 @@ useEffect(() => {
                   <h6 className="text-15 mt-20 fw-normal">Drop the files here ...</h6>
                 ) : (
                     <div>
-                    <img src="/img/startselling/upload1.png" width="60px" height="60px"/>
-                  <h6 className="text-15 mt-20 fw-normal">
+                   
+                    <Image
+                    width={60}
+                    height={60}
+                    src="/img/startselling/upload1.png"
+                    alt="image"
+                    
+                  />
+                    <h6 className="text-15 mt-20 fw-normal">
                     Drag and drop Files here or <Link href="" className="text-blue-1 fw-500">Browse</Link> your files
                   </h6>
                   </div>
@@ -50,13 +58,27 @@ useEffect(() => {
               <div className="col-md-6  ml-md-4 py-20 px-40">
                 <h6 className="text-15 fw-600 mb-10">Uploaded files:</h6>
                 {fileNames.length > 0 ? (
-                  <ul >
-                    {fileNames.map((fileName, index) => (
-                      <li  key={index}>{fileName}
-                      <img onClick={()=>removeFile(fileName)} src="/img/startselling/close.png" width={20} height={20}/>
+                  <div className="d-flex flex-wrap">
+                  {Array.from({ length: Math.ceil(fileNames.length / filesPerColumn) }).map((_, columnIndex) => (
+                  <ul key={columnIndex} className="mr-5" >
+                  {fileNames.slice(columnIndex * filesPerColumn, (columnIndex + 1) * filesPerColumn).map((fileName, index) => (
+                   
+                      <li  key={index} className="d-flex align-items-center"><span>{fileName}</span>
+                     
+                      <Image
+                      onClick={()=>removeFile(fileName)}
+                      className="ml-2 cursor-pointer"
+                    width={20}
+                    height={20}
+                    src="/img/startselling/close.png"
+                    alt="image"
+                    
+                  />
                       </li>
-                    ))}
+                      ))}
                   </ul>
+                  ))}
+                  </div>
                 ) : (
                   <p>No files uploaded yet.</p>
                 )}

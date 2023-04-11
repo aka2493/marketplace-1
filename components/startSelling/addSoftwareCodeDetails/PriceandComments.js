@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image"
 import {useState } from "react";
 import { Switch } from "@nextui-org/react";
 import { Checkbox, Spacer } from "@nextui-org/react";
@@ -41,8 +42,15 @@ const PriceandComments= () => {
            </div>
            <div className="col-md-12 mt-10">
          <span style={{display: 'flex', alignItems: 'center'}}>
-                   <img src="/img/startselling/info.svg" width={18} height={18} alt="icon" style={{marginRight: '5px'}} />
-         <p className="text-14">If the current bid is closer to Buy Now price,10% will reflect</p>
+                 
+                   <Image
+                   width={18}
+                   height={18}
+                   src="/img/startselling/info.svg"
+                   alt="icon"
+                   style={{marginRight: '5px'}}
+                 />
+                   <p className="text-14">If the current bid is closer to Buy Now price,10% will reflect</p>
                </span>
          
        </div>
@@ -60,8 +68,15 @@ const PriceandComments= () => {
          </div>
          <div className="col-md-12 mt-10">
          <span style={{display: 'flex', alignItems: 'center'}}>
-                   <img src="/img/startselling/info.svg" width={18} height={18} alt="icon" style={{marginRight: '5px'}} />
-         <p className="text-14">If the current bid is closer to Buy Now price,10% will reflect</p>
+                   
+                   <Image
+                   width={18}
+                   height={18}
+                   src="/img/startselling/info.svg"
+                   alt="icon"
+                   style={{marginRight: '5px'}}
+                 />
+                   <p className="text-14">If the current bid is closer to Buy Now price,10% will reflect</p>
                </span>
          
        </div>
@@ -76,8 +91,15 @@ const PriceandComments= () => {
        </div>
        <div className="col-md-12 mt-10">
        <span style={{display: 'flex', alignItems: 'center'}}>
-                 <img src="/img/startselling/info.svg" width={18} height={18} alt="icon" style={{marginRight: '5px'}} />
-       <p className="text-14">If the current bid is closer to Buy Now price,10% will reflect</p>
+                
+                 <Image
+                 width={18}
+                 height={18}
+                 src="/img/startselling/info.svg"
+                 alt="icon"
+                 style={{marginRight: '5px'}}
+               />
+                 <p className="text-14">If the current bid is closer to Buy Now price,10% will reflect</p>
              </span>
        
      </div>
