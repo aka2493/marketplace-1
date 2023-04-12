@@ -1,6 +1,6 @@
 import{useState } from "react"
 import Image from "next/image"
-
+import SearchBox from "../../../components/common/SearchBox"
 const MyBidsTableComponent = () => {
     const [tableData, setTableData] = useState([
       { id: 1, serverName: 'ubuntu-2cpu-4gb-sg-sin1', status: 'Stopped', software: 'ubuntu' },
@@ -20,6 +20,11 @@ const MyBidsTableComponent = () => {
     };
   
     return (
+        <div>
+        <div className="col-md-4 mb-20">
+        <SearchBox/>
+        </div>
+        <div>
       <table className="table-3 -border-bottom col-12">
         <thead className="bg-light-2">
           <tr>
@@ -52,6 +57,8 @@ const MyBidsTableComponent = () => {
           ))}
         </tbody>
       </table>
+      </div>
+      </div>
     );
   };
   
