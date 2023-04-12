@@ -64,7 +64,7 @@ const Header1 = () => {
                 {/* Start btn-group */}
                 <div className="d-flex items-center ml-20 is-menu-opened-hide md:d-none">
                   <Link
-                    href="/others-pages/login"
+                    href="/others-pages/become-seller"
                     className="button px-30 fw-400 text-14 -white bg-white h-50 text-dark-1"
                   >
                     Become An Expert
