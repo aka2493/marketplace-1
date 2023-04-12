@@ -4,9 +4,12 @@ import PaymentActivityComponent from "./paymentActivity.component";
 
 const Finance = () => {
     return (
-        <TabsSection tabLabels={['Payment Activity', 'Accounts and Cards']}
-            tabPanelComponents={[<PaymentActivityComponent />,
-            <AccountCard />]} />
+        <TabsSection tabLabels={[{ id: 1, label: 'Payment Activity' },
+        { id: 2, label: 'Accounts and Cards' }
+        ]}
+            tabPanelComponents={[{ id: 1, component: <PaymentActivityComponent /> },
+            { id: 2, component: <AccountCard /> }
+            ]} />
     );
 };
 
