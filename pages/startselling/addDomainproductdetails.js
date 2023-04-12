@@ -7,7 +7,7 @@ import Step from "../../components/startSelling/addDomainProductDetails/step";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Hotel Booking Page" />
+      <Seo pageTitle="List your Domain" />
       {/* End Page Title */}
 
       <div className="header-margin"></div>

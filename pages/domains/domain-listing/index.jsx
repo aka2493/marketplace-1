@@ -10,7 +10,7 @@ import SearchBox from "../../../components/searchBox";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Hotel List v5" />
+      <Seo pageTitle="Domains List" />
 
       <div className="header-margin"></div>
 
