@@ -3,6 +3,7 @@ import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 
 const TabsSection = ({ tabLabels = [], tabPanelComponents = [] }) => {
     const [tabIndex, setTabIndex] = useState(0);
+    
 
     return (
         <Tabs
