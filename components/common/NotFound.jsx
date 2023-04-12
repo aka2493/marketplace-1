@@ -16,14 +16,13 @@ const NotFound = () => {
       <div className="container">
         <div className="row y-gap-30 justify-between items-center">
           <div className="col-lg-6">
-        
+
             <Image
-            src={data.imageSrc}
-                 
-                  
-                  alt="image"
-                  
-                />
+              src={data.imageSrc}
+              width={500}
+              height={500}
+              alt="image"
+            />
           </div>
           <div className="col-lg-5">
             <div className="no-page">
