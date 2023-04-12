@@ -40,7 +40,8 @@ const Header1 = () => {
                  
                 />  
                 <Image
-                 
+                 width={10}
+                 height={10}
                   src="/img/general/logo-dark.svg"
                   alt="logo icon"
                   
