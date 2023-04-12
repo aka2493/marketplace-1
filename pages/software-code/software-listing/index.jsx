@@ -2,17 +2,16 @@ import dynamic from "next/dynamic";
 import Seo from "../../../components/common/Seo";
 import DefaultFooter from "../../../components/footer/default";
 import Header1 from "../../../components/header/header-1";
-import FilterTemplateCards from "../../../components/templates/FilterTemplateCards";
-import DropdownSelelctBar from "../../../components/templates/common/DropdownSelelctBar";
-import TopHeaderFilter from "../../../components/templates/TopHeaderFilter";
+import FilterSoftwareCards from "../../../components/software-code/FilterSoftwareCards";
+import DropdownSelelctBar from "../../../components/software-code/common/DropdownSelelctBar";
+import TopHeaderFilter from "../../../components/software-code/TopHeaderFilter";
 import Pagination from "../../../components/hotel-list/common/Pagination";
 import SearchBox from "../../../components/searchBox";
 
-
-const templates = () => {
+const SoftwareCode = () => {
     return (
         <>
-            <Seo pageTitle="Templates Listing" />
+            <Seo pageTitle="Software Code" />
             <div className="header-margin"></div>
             <Header1 />
 
@@ -30,10 +29,10 @@ const templates = () => {
                         <div className="col-12">
                             <div className="text-center">
                                 <h1 className="text-30 fw-600 text-white">
-                                    Templates/Plugins
+                                    Software Code
                                 </h1>
                             </div>
-                            <SearchBox placeholderText="Search any template/theme" classes="m-auto w-50 pt-20" />
+                            <SearchBox placeholderText="Search any software" classes="m-auto w-50 pt-20" />
                         </div>
                     </div>
                 </div>
@@ -81,7 +80,7 @@ const templates = () => {
                         <div className="border-top-light mt-30 mb-30"></div>
 
                         <div className="row y-gap-30">
-                            <FilterTemplateCards />
+                            <FilterSoftwareCards />
                         </div>
                         <Pagination />
                     </div>
@@ -93,4 +92,4 @@ const templates = () => {
     );
 };
 
-export default dynamic(() => Promise.resolve(templates), { ssr: false });
+export default dynamic(() => Promise.resolve(SoftwareCode), { ssr: false });

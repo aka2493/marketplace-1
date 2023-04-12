@@ -25,7 +25,7 @@ const MainMenu = ({ style = "" }) => {
           <Link href="/startselling/sellerInfoscreen">SellerInfo</Link>
         </li>
 
-        
+
 
         <li
           className={`${isActiveParentChaild(pageItems, router.asPath) ? "current" : ""
@@ -77,6 +77,10 @@ const MainMenu = ({ style = "" }) => {
         </li>
         <li className={router.pathname === "/templates/template-listing" ? "current" : ""}>
           <Link href="/templates/template-listing">Templates</Link>
+        </li>
+
+        <li className={router.pathname === "/software-code/software-listing" ? "current" : ""}>
+          <Link href="/software-code/software-listing">Software Code</Link>
         </li>
       </ul>
     </nav>
