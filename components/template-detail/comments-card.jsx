@@ -24,7 +24,7 @@ const CommentsCard = () => {
                         Like
                     </button>
                     <button className="d-flex items-center text-light-1">
-                        <i class="icon-share text-16 mr-10" />
+                        <i className="icon-share text-16 mr-10" />
                         Reply
                     </button>
                 </div>
@@ -52,7 +52,7 @@ const CommentsCard = () => {
                         Helpful
                     </button>
                     <button className="d-flex items-center text-light-1">
-                        <i class="icon-share text-16 mr-10" />
+                        <i className="icon-share text-16 mr-10" />
                         Reply
                     </button>
                 </div>
