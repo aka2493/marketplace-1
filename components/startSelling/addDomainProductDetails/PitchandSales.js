@@ -1,10 +1,17 @@
 import Link from "next/link";
+import {useState} from "react"
 import { useForm } from "react-hook-form";
 import Image from "next/image"
 
 
 const PitchandSales= () => {
-  
+  const [categoryValue, setcategoryValue] = useState("Select Listing Category");
+  const handlecategoryvalueChange = (value) => {
+    setcategoryValue(value);
+  };
+
+  const options = ["Business","Art","Food","Fashion","Entertainment"]
+    
   return (
     <>
    
@@ -19,8 +26,6 @@ const PitchandSales= () => {
         <span className="text-40 fw-600">1</span>
         <span className="text-20 fw-400">/4</span>
     </div>
-       
-       
         <div className="row x-gap-20 y-gap-20 pt-10">
        
           <div className="col-auto">
@@ -32,20 +37,25 @@ const PitchandSales= () => {
                 aria-expanded="false"
                 data-bs-offset="0,10"
               >
-                <h2 className="text-16 fw-500 text-light-1">Select Listing Category</h2>
+                <h2 className="text-16 fw-500 text-light-1">{categoryValue}</h2>
                 <i className="icon icon-chevron-sm-down text-7" />
               </div>
               {/* End dropdown__button */}
   
               <div className="toggle-element -dropdown js-click-dropdown dropdown-menu">
                 <div className="text-15 y-gap-15 js-dropdown-list">
-                    <div >
-                      <button
-                      
+
+                {options.map((item, index) => (
+                  <div key={index}>
+                      <button className={`${
+                        item === categoryValue? "text-blue-1 " : ""
+                      }d-block js-dropdown-link`}
+                      onClick={() => handlecategoryvalueChange(item)}
                       >
-                    Business
+                  {item}
                       </button>
-                    </div>
+                      </div>
+                      ))}
                 
                 </div>
               </div>
