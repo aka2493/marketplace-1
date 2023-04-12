@@ -43,12 +43,12 @@ const PaymentActivityComponent = () => {
                 </div>
                 <div className="col-md-6">
                     <div className="fw-500 text-18">Cash Out</div>
-                    <div class="single-field row d-flex pt-10">
-                        <div class="col-8">
-                            <input style={{ borderRadius: 'initial' }} class="col-12 bg-white h-50 border" type="text" placeholder="Enter amount" required="" />
+                    <div className="single-field row d-flex pt-10">
+                        <div className="col-8">
+                            <input style={{ borderRadius: 'initial' }} className="col-12 bg-white h-50 border" type="text" placeholder="Enter amount" required="" />
                         </div>
-                        <div class="col-4">
-                            <button type="button" style={{ borderRadius: 'initial' }} class="button px-40 h-50 w-100 -blue-1 bg-green-2 text-white">Request</button>
+                        <div className="col-4">
+                            <button type="button" style={{ borderRadius: 'initial' }} className="button px-40 h-50 w-100 -blue-1 bg-green-2 text-white">Request</button>
                         </div>
                     </div>
                 </div>

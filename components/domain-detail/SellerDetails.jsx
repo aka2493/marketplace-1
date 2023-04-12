@@ -29,7 +29,7 @@ const SellerDetails = ({ }) => {
               </Link>
             </div>
             <div className="col-12">
-              <button class="d-flex items-center text-blue-1"><i class="icon-location text-16 mr-10"></i>Location, UK</button>
+              <button className="d-flex items-center text-blue-1"><i className="icon-location text-16 mr-10"></i>Location, UK</button>
             </div>
           </div>
 

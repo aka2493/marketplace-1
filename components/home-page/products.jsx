@@ -176,7 +176,7 @@ const PopularProducts = () => {
                                     <div className="text-16 text-dark-1 fw-500">
                                         Avada | Responsive
                                     </div>
-                                    <div class="d-flex x-gap-5 items-center">
+                                    <div className="d-flex x-gap-5 items-center">
                                         <span className="text-blue-1 text-16 fw-600">${item?.price}.00</span>
                                     </div>
                                 </div>
@@ -185,12 +185,12 @@ const PopularProducts = () => {
                                     <div className="text-16 text-dark-1 fw-500">
                                         Multi-Purpose
                                     </div>
-                                    <div class="d-flex x-gap-5 items-center">
-                                        <div class="icon-star text-15 text-yellow-1">
-                                        </div><div class="icon-star text-15 text-yellow-1">
-                                        </div><div class="icon-star text-15 text-yellow-1">
-                                        </div><div class="icon-star text-15 text-yellow-1">
-                                        </div><div class="icon-star text-15 text-yellow-1">
+                                    <div className="d-flex x-gap-5 items-center">
+                                        <div className="icon-star text-15 text-yellow-1">
+                                        </div><div className="icon-star text-15 text-yellow-1">
+                                        </div><div className="icon-star text-15 text-yellow-1">
+                                        </div><div className="icon-star text-15 text-yellow-1">
+                                        </div><div className="icon-star text-15 text-yellow-1">
                                         </div>
                                     </div>
                                 </div>

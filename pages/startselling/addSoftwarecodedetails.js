@@ -1,6 +1,6 @@
 
 import Seo from "../../components/common/Seo";
-import Header11 from "../../components/header/header-11";
+import Header1 from "../../components/header/header-1";
 import DefaultFooter from "../../components/footer/default";
 import Step from "../../components/startSelling/addSoftwareCodeDetails/step";
 
@@ -13,7 +13,7 @@ const index = () => {
       <div className="header-margin"></div>
       {/* header top margin */}
 
-      <Header11 />
+      <Header1 />
       {/* End Header 1 */}
 
       <section className="pt-40 layout-pb-md">

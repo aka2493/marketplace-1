@@ -7,10 +7,10 @@ const PricingCard = ({ showMultiplePricing = false, priceHeadingWithDisCode = tr
         <div className="px-30 py-30 rounded-4 border-light bg-white shadow-4">
 
           {priceHeadingWithDisCode ? <div>
-            <span class="text-24 fw-600 text-dark-1 lh-12">$700.44</span>
+            <span className="text-24 fw-600 text-dark-1 lh-12">$700.44</span>
             <span className="pl-5 text-16"><del>$999</del></span>
             <span className="pl-5 text-16">(10% off)</span>
-          </div> : <div class="text-24 fw-600 text-dark-1 lh-12">
+          </div> : <div className="text-24 fw-600 text-dark-1 lh-12">
             Responsive HTML Template
           </div>}
 
@@ -27,12 +27,12 @@ const PricingCard = ({ showMultiplePricing = false, priceHeadingWithDisCode = tr
 
           <div className="row y-gap-20 pt-30">
 
-            {!showMultiplePricing ? (auctionEnabled ? <div class="single-field d-flex pt-30">
-              <div class="col-8">
-                <input style={{ borderRadius: 'initial' }} class="col-12 bg-white h-60 border" type="text" placeholder="Enter your offer" required="" />
+            {!showMultiplePricing ? (auctionEnabled ? <div className="single-field d-flex pt-30">
+              <div className="col-8">
+                <input style={{ borderRadius: 'initial' }} className="col-12 bg-white h-60 border" type="text" placeholder="Enter your offer" required="" />
               </div>
-              <div class="col-4">
-                {/* <button type="submit" style={{ borderRadius: 'initial' }} class="button -md h-60 -blue-1 bg-yellow-1 text-dark-1">Buy</button> */}
+              <div className="col-4">
+                {/* <button type="submit" style={{ borderRadius: 'initial' }} className="button -md h-60 -blue-1 bg-yellow-1 text-dark-1">Buy</button> */}
               </div>
             </div> : null) : <div>
               <div className="border-top-light mb-10"></div>
