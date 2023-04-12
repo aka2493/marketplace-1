@@ -9,7 +9,7 @@ const [fileNames, setFileNames] = useState([]);
 const [filesPerColumn, setFilesPerColumn] = useState(5);
 
 useEffect(() => {
-  if (fileNames.length > 15) {
+  if (fileNames.length > 10) {
     setFilesPerColumn(3);
   }
 }, [fileNames]);

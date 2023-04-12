@@ -1151,7 +1151,7 @@ $_displays: none, inline-block, block, flex;
   label {
     position: absolute;
     top: 0;
-    top: 26px;
+    top: 20px;
     padding: 0 15px;
     pointer-events: none;
     font-size: 14px;
@@ -1164,7 +1164,7 @@ $_displays: none, inline-block, block, flex;
     border-radius: 4px;
     padding: 0 15px;
     padding-top: 25px;
-    min-height: 70px;
+    min-height: 40px;
     transition: all 0.2s $easeOutQuart;
 
     &:focus {
