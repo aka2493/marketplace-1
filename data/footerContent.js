@@ -5,17 +5,17 @@ module.exports = [
     menuList: [
       { name: "About Us", routerPath: "/" },
       { name: "Careers", routerPath: "/" },
-      { name: "Blog", routerPath: "/" },
+      { name: "Investors", routerPath: "/" },
       { name: "Press", routerPath: "/" },
-      { name: "Gift Cards", routerPath: "/" },
+      { name: "", routerPath: "/" },
     ],
   },
   {
     id: 2,
-    title: "Support",
+    title: "Legal and Terms",
     menuList: [
-      { name: "Contact", routerPath: "/" },
-      { name: "Legal Notice", routerPath: "/" },
+      { name: "Acceptable Usage Policy", routerPath: "/" },
+      { name: "GDPR / CCPA", routerPath: "/" },
       { name: "Privacy Policy", routerPath: "/" },
       { name: "Terms and Conditions", routerPath: "/" },
       { name: "Sitemap", routerPath: "/" },
@@ -23,15 +23,14 @@ module.exports = [
   },
   {
     id: 3,
-    title: "Other Services",
+    title: "Partners",
     menuList: [
-      { name: "Car hire", routerPath: "/" },
-      { name: "Activity Finder", routerPath: "/" },
-      { name: "Tour List", routerPath: "/" },
-      { name: "Flight finder", routerPath: "/" },
-      { name: "Cruise Ticket", routerPath: "/" },
-      { name: "Holiday Rental", routerPath: "/" },
-      { name: "Travel Agents", routerPath: "/" },
+      { name: "Software Agency", routerPath: "/" },
+      { name: "Affiliates", routerPath: "/" },
+      { name: "Resellers", routerPath: "/" },
+      { name: "Cloud Partners", routerPath: "/" },
+      { name: "Merchant Partners", routerPath: "/" },
+
     ],
   },
 ];
