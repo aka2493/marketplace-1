@@ -164,9 +164,14 @@ const TemplateDetail = () => {
                             <div className="row x-gap-40 y-gap-40">
                                 <div className="col-12">
                                     <div className="pt-30">
-                                        <TabsSection tabLabels={['Description', 'Login Credentials', 'Comments']}
-                                            tabPanelComponents={[<TemplateDescription />,
-                                            <TemplateLoginCredSection />, <TemplateComments />]} />
+                                    <TabsSection tabLabels={[{ id: 1, label: 'Description' },
+                                        { id: 2, label: 'Login Credentials' },
+                                        { id: 3, label: 'Comments' },
+                                        ]}
+                                            tabPanelComponents={[{ id: 1, component: <TemplateDescription /> },
+                                            { id: 2, component: <TemplateLoginCredSection /> },
+                                            { id: 3, component: <TemplateComments /> },
+                                            ]} />
                                     </div>
 
                                 </div>

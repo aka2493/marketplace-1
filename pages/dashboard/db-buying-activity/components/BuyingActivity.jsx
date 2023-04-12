@@ -7,9 +7,14 @@ import WatchlistComponent from "./Watchlist.component";
 const BuyingActivity = () => {
   return (
     <>
-      <TabsSection tabLabels={['My Bids', 'My Orders', 'Watching']}
-        tabPanelComponents={[<MyBidsTableComponent />,
-        <MyOrdersTableComponent />, <WatchlistComponent />]} />
+      <TabsSection tabLabels={[{ id: 1, label: 'My Bids' },
+      { id: 2, label: 'My Orders' },
+      { id: 3, label: 'Watching' },
+      ]}
+        tabPanelComponents={[{ id: 1, component: <MyBidsTableComponent /> },
+        { id: 2, component: <MyOrdersTableComponent /> },
+        { id: 3, component: <WatchlistComponent /> },
+        ]} />
       <Pagination />
     </>
   );

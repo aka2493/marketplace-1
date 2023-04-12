@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const BlockGuide = () => {
   const blockContent = [
     {
@@ -51,7 +53,8 @@ const BlockGuide = () => {
               <Image
               src={item.icon}
               className="js-lazy"
-                            
+                            width={10}
+                            height={10}
                             alt="image"
                             
                           />
