@@ -8,8 +8,8 @@ export const pageItems = [
     routePath: "/others-pages/about",
   },
   {
-    name: "Become Expert",
-    routePath: "/others-pages/become-expert",
+    name: "Become Seller",
+    routePath: "/others-pages/become-seller",
   },
   {
     name: "Help Center",
