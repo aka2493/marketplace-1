@@ -7,7 +7,7 @@ import Step from "../../components/startSelling/addTemplateProductDetails/step";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Hotel Booking Page" />
+      <Seo pageTitle="List your templates" />
       {/* End Page Title */}
 
       <div className="header-margin"></div>

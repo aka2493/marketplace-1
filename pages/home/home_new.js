@@ -7,11 +7,12 @@ import BlockGuide from "../../components/block/BlockGuide";
 import TourCategories from "../../components/home-page/TourCategories";
 import PopularProducts from "../../components/home-page/products";
 import Blog3 from '../../components/home-page/Blog3';
+import CallToActions from "../../components/common/CallToActions";
 
 const Homepage = () => {
     return (
         <>
-            <Seo pageTitle="Home-1" />
+            <Seo pageTitle="Stebr, The largest software marketplace" />
 
             <Header1 />
 
@@ -102,6 +103,8 @@ const Homepage = () => {
 
                 </div>
             </section>
+
+            <CallToActions />
 
             <DefaultFooter />
         </>

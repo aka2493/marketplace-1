@@ -12,7 +12,7 @@ import Link from "next/link";
 const BecomeExpert = () => {
   return (
     <>
-      <Seo pageTitle="Become Expert" />
+      <Seo pageTitle="Become a Seller" />
       {/* End Page Title */}
 
       <div className="header-margin"></div>

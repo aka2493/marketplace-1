@@ -7,7 +7,7 @@ import Step from "../../components/startSelling/addSoftwareCodeDetails/step";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Hotel Booking Page" />
+      <Seo pageTitle="List your Software for sale" />
       {/* End Page Title */}
 
       <div className="header-margin"></div>
