@@ -35,8 +35,8 @@ const ServerDetails = ({ server, onCloseClick }) => {
         </thead>
         <tbody>
         
-        {tableData.map((item) => (
-       <tr>
+        {tableData.map((item,index) => (
+       <tr key={index}>
           <td>{item.serverName}</td>
           <td>{item.hostName}</td>
           <td>{item.IP}</td>
@@ -62,8 +62,8 @@ const ServerDetails = ({ server, onCloseClick }) => {
 
      <tbody>
      
-     {tableData1.map((item) => (
-    <tr className="items-center">
+     {tableData1.map((item,index) => (
+    <tr key={index} className="items-center">
        <td>{item.Cpu}</td>
        <td>{item.Memory}</td>
        <td>{item.Storage}</td>
@@ -106,8 +106,8 @@ const ServerDetails = ({ server, onCloseClick }) => {
         </thead>
         <tbody>
         
-        {tableData2.map((item) => (
-       <tr>
+        {tableData2.map((item,index) => (
+       <tr key={index}>
           <td>{item.Direction}</td>
           <td>{item.Maximum}</td>
           <td>{item.Average}</td>
@@ -118,7 +118,7 @@ const ServerDetails = ({ server, onCloseClick }) => {
        
         </tbody>
       </table>
-   <button className="h-40 px-35 mt-40 ml-20 -dark-1 bg-pink text-white" onClick={onCloseClick}>
+   <button className="h-40 px-35 mt-40 ml-20 mb-20 -dark-1 bg-pink text-white" onClick={onCloseClick}>
       Close
     </button>
       
