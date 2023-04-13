@@ -34,10 +34,10 @@ const BecomeExpert = () => {
           <div className="row justify-center text-center">
             <div className="col-xl-6 col-lg-8 col-md-10">
               <h1 className="text-40 md:text-25 fw-600 text-white">
-                Let&apos;s Show the Beauty of Your City to the World
+              Transform Your Digital Business from Good to Great 
               </h1>
               <div className="text-white mt-15">
-                Discover amzaing places at exclusive deals
+              Sell Your Digital Products with Ease - Join Our Revolutionary Platform Today!
               </div>
               <div className="d-inline-block">
                 <Link
