@@ -66,7 +66,7 @@ const MobileMenu = () => {
                 />
               }
             >
-              Start Listing
+              Start Selling
             </MenuItem>
             {/* End  Desitinations Menu */}
 

@@ -39,9 +39,10 @@ const MyBidsTableComponent = () => {
   };
   return (
     <div>
+    {!showDetails &&(
       <div className="col-md-4 mb-20">
         <SearchBox />
-      </div>
+      </div>)}
       <div>
         {!showDetails && (
           <table className="table-3 -border-bottom col-12">

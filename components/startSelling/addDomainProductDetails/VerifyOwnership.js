@@ -89,7 +89,7 @@ const VerifyOwnership= () => {
             No
           </Button>
           <Button variant="primary" onClick={handleClick}>
-          Yes, Go to Start Listing
+          Yes, Go to Start Selling
           </Button>
         </Modal.Footer>
       </Modal>
