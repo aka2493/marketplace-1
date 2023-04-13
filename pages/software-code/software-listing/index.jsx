@@ -3,7 +3,7 @@ import Seo from "../../../components/common/Seo";
 import DefaultFooter from "../../../components/footer/default";
 import Header1 from "../../../components/header/header-1";
 import FilterSoftwareCards from "../../../components/software-code/FilterSoftwareCards";
-import DropdownSelelctBar from "../../../components/software-code/common/DropdownSelelctBar";
+import DropdownSelectBar from "../../../components/software-code/common/DropdownSelectBar";
 import TopHeaderFilter from "../../../components/software-code/TopHeaderFilter";
 import Pagination from "../../../components/hotel-list/common/Pagination";
 import SearchBox from "../../../components/searchBox";
@@ -50,7 +50,7 @@ const SoftwareCode = () => {
 
                                 <div className="col-auto">
                                     <div className="row x-gap-15 y-gap-15">
-                                        <DropdownSelelctBar />
+                                        <DropdownSelectBar />
                                     </div>
                                 </div>
 

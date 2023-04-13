@@ -6,7 +6,7 @@ const Copyright = () => {
       <div className="col-auto">
         <div className="row x-gap-30 y-gap-10">
           <div className="col-auto">
-            <div className="d-flex items-center">
+            <div className="d-flex items-center text-14">
             © {new Date().getFullYear()} by
               <a
                 href="https://themeforest.net/user/ib-themes"
@@ -22,7 +22,7 @@ const Copyright = () => {
           {/* End .col */}
 
           <div className="col-auto">
-            <div className="d-flex x-gap-15">
+            <div className="d-flex x-gap-15 text-14">
               <a href="#"></a>
               <a href="#">Investor relations</a>
               <a href="#">Disclaimer</a>

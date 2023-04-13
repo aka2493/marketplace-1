@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const DropdownSelelctBar = () => {
+const DropdownSelectBar = () => {
   const [priceValue, setPriceValue] = useState("I'm Looking For");
   const [amenitiesValue, setAmenitiesValue] = useState("Select Category");
   const [styleValue, setStyleValue] = useState("Technology/Platform");
@@ -92,4 +92,4 @@ const DropdownSelelctBar = () => {
   );
 };
 
-export default DropdownSelelctBar;
+export default DropdownSelectBar;

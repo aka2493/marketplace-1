@@ -3,7 +3,7 @@ import Seo from "../../../components/common/Seo";
 import DefaultFooter from "../../../components/footer/default";
 import Header1 from "../../../components/header/header-1";
 import FilterTemplateCards from "../../../components/templates/FilterTemplateCards";
-import DropdownSelelctBar from "../../../components/templates/common/DropdownSelelctBar";
+import DropdownSelectBar from "../../../components/templates/common/DropdownSelectBar";
 import TopHeaderFilter from "../../../components/templates/TopHeaderFilter";
 import Pagination from "../../../components/hotel-list/common/Pagination";
 import SearchBox from "../../../components/searchBox";
@@ -51,7 +51,7 @@ const templates = () => {
 
                                 <div className="col-auto">
                                     <div className="row x-gap-15 y-gap-15">
-                                        <DropdownSelelctBar />
+                                        <DropdownSelectBar />
                                     </div>
                                 </div>
 

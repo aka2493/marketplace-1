@@ -16,6 +16,12 @@ const Sidebar = () => {
     {
       id: 2,
       icon: "/img/dashboard/sidebar/booking.svg",
+      name: "Cloud Management",
+      routePath: "/dashboard/db-servers",
+    },
+    {
+      id: 2,
+      icon: "/img/dashboard/sidebar/booking.svg",
       name: "Messages",
       routePath: "/dashboard/db-messages",
     },
