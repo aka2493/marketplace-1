@@ -17,8 +17,31 @@ const MainMenu = ({ style = "" }) => {
     <nav className="menu js-navList">
       <ul className={`menu__nav ${style} -is-active`}>
 
+
+      <li className={router.pathname === "/domains/domain-listing" ? "current" : ""}>
+          <Link href="/domains/domain-listing">Domains</Link>
+        </li>
+        <li className={router.pathname === "/templates/template-listing" ? "current" : ""}>
+          <Link href="/templates/template-listing">Templates</Link>
+        </li>
+
+        <li className={router.pathname === "/domains/domain-listing" ? "current" : ""}>
+          <Link href="/domains/domain-listing">Software Code</Link>
+        </li>
+        <li className={router.pathname === "/templates/template-listing" ? "current" : ""}>
+          <Link href="/templates/template-listing">Cloud</Link>
+        </li>
+
+
+        <li className={router.pathname === "/domains/domain-listing" ? "current" : ""}>
+          <Link href="/domains/domain-listing">Start your business</Link>
+        </li>
+  
+
+
+
         <li className={router.pathname === "/startlisting" ? "current" : ""}>
-          <Link href="/startlisting">Start Listing</Link>
+          <Link href="/startlisting">Start Selling</Link>
         </li>
 
         <li className={router.pathname === "/startselling/sellerInfoscreen" ? "current" : ""}>
@@ -72,12 +95,7 @@ const MainMenu = ({ style = "" }) => {
           </ul>
         </li>
 
-        <li className={router.pathname === "/domains/domain-listing" ? "current" : ""}>
-          <Link href="/domains/domain-listing">Domains</Link>
-        </li>
-        <li className={router.pathname === "/templates/template-listing" ? "current" : ""}>
-          <Link href="/templates/template-listing">Templates</Link>
-        </li>
+     
       </ul>
     </nav>
   );

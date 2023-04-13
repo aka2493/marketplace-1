@@ -64,7 +64,7 @@ const Header1 = () => {
             <div className="col-auto">
               <div className="d-flex items-center">
                 <div className="row x-gap-20 items-center xxl:d-none">
-                  <CurrenctyMegaMenu textClass="text-dark-1" />
+                  {/* <CurrenctyMegaMenu textClass="text-dark-1" /> */}
                   {/* End Megamenu for Currencty */}
 
                   {/* Start vertical devider*/}
@@ -73,7 +73,7 @@ const Header1 = () => {
                   </div>
                   {/* End vertical devider*/}
 
-                  <LanguageMegaMenu textClass="text-dark-1" />
+                  {/* <LanguageMegaMenu textClass="text-dark-1" /> */}
                   {/* End Megamenu for Language */}
                 </div>
                 {/* End language and currency selector */}
@@ -84,7 +84,7 @@ const Header1 = () => {
                     href="/others-pages/login"
                     className="button px-30 fw-400 text-14 -blue-1 bg-blue-1 h-50 text-white"
                   >
-                    Become An Expert
+                    Become a Seller
                   </Link>
                   <Link
                     href="/others-pages/signup"
