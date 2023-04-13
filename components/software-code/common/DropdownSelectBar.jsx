@@ -1,8 +1,6 @@
 import { useState } from "react";
-import RatingFilter from "./RatingFilter";
-import PriceSlider from "../PriceSlider";
 
-const DropdownSelelctBar = () => {
+const DropdownSelectBar = () => {
   const [priceValue, setPriceValue] = useState("I'm Looking For");
   const [amenitiesValue, setAmenitiesValue] = useState("Select Category");
   const [styleValue, setStyleValue] = useState("Technology/Platform");
@@ -90,71 +88,8 @@ const DropdownSelelctBar = () => {
           {/* End dropdown */}
         </div>
       ))}
-
-     
-
-
-
-      {/* <div className="col-auto">
-        <div className="relative ">
-          <button
-            className="d-flex items-center px-15 py-5 lh-16 text-14 rounded-100 border-light"
-            data-bs-toggle="dropdown"
-            data-bs-auto-close="outside"
-            aria-expanded="false"
-            data-bs-offset="0,10"
-          >
-            {selectedValues.length === 0
-              ? "Neighborhood"
-              : selectedValues.join(", ")}
-            <i className="icon icon-chevron-sm-down text-7 ml-15" />
-          </button>
-
-          <div className="dropRating dropdown-menu">
-            <div className="px-20 py-20 rounded-4 bg-white border-light">
-              <h5 className="text-15 fw-500 mb-15">Neighborhood</h5>
-              <div className="sidebar-checkbox">
-                {data.map((item) => (
-                  <div
-                    key={item.value}
-                    className="row y-gap-10 items-center justify-between"
-                  >
-                    <div className="col-auto">
-                      <div className="form-checkbox d-flex items-center">
-                        <input
-                          type="checkbox"
-                          name={item.value}
-                          checked={selectedValues.includes(item.value)}
-                          onChange={(e) => {
-                            const { checked, name } = e.target;
-                            setSelectedValues((prevValues) =>
-                              checked
-                                ? [...prevValues, name]
-                                : prevValues.filter((value) => value !== name)
-                            );
-                          }}
-                        />
-                        <div className="form-checkbox__mark">
-                          <div className="form-checkbox__icon icon-check" />
-                        </div>
-                        <div className="text-15 ml-10">{item.label}</div>
-                      </div>
-                    </div>
-                    <div className="col-auto">
-                      <div className="text-15 text-light-1">92</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <button className="d-block text-14 fw-500 underline text-blue-1 mt-15">
-                Show all 30
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 };
 
-export default DropdownSelelctBar;
+export default DropdownSelectBar;
