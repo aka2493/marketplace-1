@@ -1,7 +1,8 @@
 import Pagination from "../common/Pagination";
 import TabsSection from "../../../components/template-detail/Tabs/tabPanel"
-import SearchBox from ".././../../components/common/SearchBox"
+
 import ServerBlock from "../db-servers/ServerBlock";
+import ServerDetails from "../db-servers/ServerDetails"
 const BuyingActivity = () => {
   return (
     <>
@@ -9,7 +10,7 @@ const BuyingActivity = () => {
      
       ]}
         tabPanelComponents={[{ id: 1, component: <ServerBlock /> },
-        
+      
         ]} />
       <Pagination />
     </>
