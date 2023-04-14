@@ -22,7 +22,7 @@ const DeploymentDetails = () => {
     ];
 
     return(
-        <div className="rounded-4 bg-white shadow-3">
+        <div>
         <h5 className="text-16 fw-500 mt-20 mb-15">Configuration</h5>
         <div className="row">
         <div className="col-6">
@@ -70,8 +70,8 @@ const DeploymentDetails = () => {
   </div>
   <div className="flex-container mt-30 image-container">
   
-  {images.map((item) => (
-    <div className="rounded stack bg-light-2">
+  {images.map((item,index) => (
+    <div key={index} className="rounded stack bg-light-2">
      
         <Image  width={60} height={60} src={item.icon} alt="image" />
      
@@ -114,12 +114,12 @@ const DeploymentDetails = () => {
 
 
 
-  <button className="h-40 px-30 mt-40 ml-20 mb-20 -dark-1 bg-white border-dark-4 text-dark-4">
+  <button className="h-40 px-30 mt-40  mb-20 -dark-1 bg-white border-dark-4 text-dark-4">
   Save Deployment Plan
 </button>
 
 
-   <button className="h-40 px-40 mt-40 ml-20 mb-20 -dark-1 bg-dark-4 text-white">
+   <button className="h-40 px-40 mt-40 ml-30 mb-20 -dark-1 bg-dark-4 text-white">
       Build and Deploy
     </button>
       
