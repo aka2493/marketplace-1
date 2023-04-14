@@ -1,7 +1,7 @@
 import{useState } from "react"
 import Image from "next/image"
-import ServerNetworkSelect from "../db-servers/ServerNetworkSelect";
-import ServerChart from "../db-servers/ServerChart";
+import ServerNetworkSelect from "./ServerNetworkSelect";
+import ServerChart from "./ServerChart";
 
 const ServerDetails = ({ server, onCloseClick }) => {
   const [tableData, setTableData] = useState([

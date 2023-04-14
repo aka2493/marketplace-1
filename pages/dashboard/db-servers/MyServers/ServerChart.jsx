@@ -87,7 +87,7 @@ import {
   const ChartMain = () => {
     
     return (
-        <div className="container ml-10 mr-20 border  py-40 border-light-4">
+        <div className="container mr-10 border  py-40 border-light-4">
         <div className="d-flex justify-between items-center">
    <span>
      <h5 className="text-16 fw-500  ml-20">Public Network</h5>

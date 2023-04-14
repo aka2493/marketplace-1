@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
-import SearchBox from "../../../components/searchBox";
+import SearchBox from "../../../../components/searchBox"
+import Pagination from "../../common/Pagination"
 import ServerDetails from "./ServerDetails";
 
 const MyBidsTableComponent = () => {
@@ -62,11 +63,17 @@ const MyBidsTableComponent = () => {
             </tbody>
           </table>
         )}
+      
         {showDetails && (
           <ServerDetails server={selectedServer} onCloseClick={handleCloseClick} />
         )}
+        {!showDetails && (
+        <Pagination/>
+        )}
       </div>
+     
     </div>
+    
   );
 };
 
