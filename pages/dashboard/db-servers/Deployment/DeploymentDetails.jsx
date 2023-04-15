@@ -1,29 +1,58 @@
 import{useState } from "react"
 import  Image  from "next/image"
+import ModalProgressBar from "../../../../components/servers/ModalProgressBar";
+import DeploymentBlock from "./DeploymentBlock";
 
 const DeploymentDetails = () => {
     const [stackValue, setStackValue] = useState("Mean Stack");
+    const [show, setShow] = useState(false); // initialize a state variable to control modal visibility
+    const [showDeployedComponent,setShowDeployedComponent] =useState(false);
+  
+
+  const handleShow = () => {
+  setShow(true);
+
+  }
+  const handleClose = (status) => {
+    setShow(false);
+    if (status === "deployed") {
+      setShowDeployedComponent(true);
+    }
+  };
     const handleStackvalueChange = (value) => {
       setStackValue(value);
     };
-  
+
     const stackoptions = ["React.js","Dot.Net","Angular","Mongo DB","Express"]
 
     const images = [
       {
-        icon: "/img/servers/node-js.svg",
-      },
-      { icon: "/img/servers/node-js.svg",
-      },
-      { icon: "/img/servers/node-js.svg", 
-      },
-      {icon: "/img/servers/node-js.svg",
+        icon: "/img/servers/node-js.svg",}, { icon: "/img/servers/node-js.svg",},{ icon: "/img/servers/node-js.svg", },{icon: "/img/servers/node-js.svg",
     }
     ];
 
     return(
+     
         <div>
-        <h5 className="text-16 fw-500 mt-20 mb-15">Configuration</h5>
+        {showDeployedComponent  ?(<DeploymentBlock />
+        
+        ):(
+          <div>
+        <div className="d-flex justify-between items-center mb-20">
+          <div className="col-md-4 mt-20">
+          <h5 className="text-16 fw-500">Configuration</h5>
+          </div>
+          <div className="d-flex mt-20">       
+            <Image
+            width={20}
+            height={2}
+            src="/img/startselling/close1.png"
+            alt="image"         
+          />
+                  
+            <h6 className="text-red-1 fw-400 ml-5">Cancel and Exit</h6>    
+          </div>
+          </div>
         <div className="row">
         <div className="col-6">
             <div className="single-field">
@@ -100,31 +129,24 @@ const DeploymentDetails = () => {
         src="/img/servers/user.png"
         width={15}
         height={15}
-        alt="image"
-    
+        alt="image"   
       />
-       
-      <span className="fw-500  ml-10 text-blue-1">
+           <span className="fw-500  ml-10 text-blue-1">
         Connect Account
       </span>
     </div>
   </div>
-
-
-
-
-
   <button className="h-40 px-30 mt-40  mb-20 -dark-1 bg-white border-dark-4 text-dark-4">
   Save Deployment Plan
 </button>
 
-
-   <button className="h-40 px-40 mt-40 ml-30 mb-20 -dark-1 bg-dark-4 text-white">
+   <button onClick={handleShow} className="h-40 px-40 mt-40 ml-30 mb-20 -dark-1 bg-dark-4 text-white">
       Build and Deploy
     </button>
-      
+    <ModalProgressBar show={show} onDismiss={handleClose}/>{/* render modal component based on state */}
+        </div>
+    )}
     
-      
       </div>
     )
   };
