@@ -10,46 +10,17 @@ const Sidebar = () => {
     {
       id: 1,
       icon: "/img/dashboard/sidebar/compass.svg",
-      name: "Dashboard",
-      routePath: "/dashboard/db-dashboard",
+      name: "Servers",
+      routePath: "/CloudDashboard/db-servers",
     },
-  
     {
       id: 2,
       icon: "/img/dashboard/sidebar/booking.svg",
-      name: "Messages",
-      routePath: "/dashboard/db-messages",
+      name: "Deployment",
+      routePath: "/CloudDashboard/db-deployment",
     },
-    {
-      id: 3,
-      icon: "/img/dashboard/sidebar/booking.svg",
-      name: " Buying Activity",
-      routePath: "/dashboard/db-buying-activity",
-    },
-    {
-      id: 4,
-      icon: "/img/dashboard/sidebar/bookmark.svg",
-      name: "Selling Activity",
-      routePath: "/dashboard/db-seller-activity",
-    },
-    {
-      id: 5,
-      icon: "/img/dashboard/sidebar/gear.svg",
-      name: " My Finance",
-      routePath: "/dashboard/db-finance",
-    },
-    {
-      id: 6,
-      icon: "/img/dashboard/sidebar/gear.svg",
-      name: "Account and Security",
-      routePath: "/dashboard/db-settings",
-    },
-    {
-      id: 7,
-      icon: "/img/dashboard/sidebar/log-out.svg",
-      name: " Promotions",
-      routePath: "/dashboard/db-promotions",
-    },
+   
+  
   ];
   return (
     <div className="sidebar -dashboard">

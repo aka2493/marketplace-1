@@ -3,7 +3,7 @@ import { useState } from "react";
 import SearchBox from "../../../../components/searchBox";
 import DeploymentDetails from "../Deployment/DeploymentDetails";
 
-const DeploymentBlock = (showservers) => {
+const DeploymentBlock = () => {
   const [showComponent, setShowComponent] = useState(false);
 
   const handleClick = () => {
