@@ -28,8 +28,8 @@ const MainMenu = ({ style = "" }) => {
         <li className={router.pathname === "/software-code/software-listing" ? "current" : ""}>
           <Link href="/software-code/software-listing">Software Code</Link>
         </li>
-        <li className={router.pathname === "/templates/template-listing" ? "current" : ""}>
-          <Link href="/templates/template-listing">Cloud</Link>
+        <li className={router.pathname === "/CloudDashboard/db-servers" ? "current" : ""}>
+          <Link href="/CloudDashboard/db-servers">Cloud Dashboard</Link>
         </li>
         <li className={router.pathname === "/domains/domain-listing" ? "current" : ""}>
           <Link href="/domains/domain-listing">Start your business</Link>

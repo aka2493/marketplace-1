@@ -13,7 +13,16 @@
     display:flex !important;
 }
 }
+.image-container{
+  display: flex;
+  justify-content: space-between;
+}
 
+.stack{
+  margin:10px;
+  text-align: center;
+  width: 100px;
+}
 .price{
     @include media-below(xs){
         display:block !important;
