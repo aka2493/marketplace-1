@@ -1,8 +1,8 @@
-import Link from "next/link";
-import React, { useCallback, useState } from 'react';
+
 import ThumbnailUploader from "./ThumbnailUploader"
 import UploadDragandDropFile from "./UploadDragDropFile"
 import UploadDragandDropImages from "./uploadDragandDropImages";
+
 const Files= () => {
    
 
@@ -10,7 +10,7 @@ const Files= () => {
     <>
       <div className="col-xl-8 col-lg-8 mt-30">
         <div className="py-15 px-20 rounded-4 mt-30 text-15 bg-green-1">
-       Upload Thumbnails,Screenshots and After Purchase Deliverables for Your Template & Plugins
+       Upload Thumbnails,&nbsp;Screenshots and after Purchase Deliverables for Your Template & Plugins
           
         </div>
         {/* End register notify */}

@@ -4,9 +4,8 @@ import { Modal,ProgressBar } from 'react-bootstrap';
 
 const ModalProgressBar= ({show, onDismiss}) => {
   const [progress, setProgress] = useState(0);
-  const [isDeploying, setIsDeploying] = useState(false);
- 
-  
+const [isDeploying, setIsDeploying] = useState(false);
+
   useEffect(() => {
     let timer = setInterval(() => {
       // Increase progress by 10 every second, up to 100
@@ -14,7 +13,6 @@ const ModalProgressBar= ({show, onDismiss}) => {
         prevProgress >= 100 ? 100 : prevProgress + 10
       );
     }, 1000);
-    
 
     return () => clearInterval(timer); // Cleanup function to clear the timer when component unmounts
   }, []);
@@ -23,12 +21,10 @@ const ModalProgressBar= ({show, onDismiss}) => {
     setIsDeploying(true);
     setProgress(0);
   };
-
-
-
+ 
   const renderButtons = () => {
     if (isDeploying) {
-      return progress === 100 ? (
+      return progress === 100 ? (  
         <button
         onClick={() => onDismiss("deployed")}
           className="h-40 px-30 mt-20 fw-600 mb-20 -dark-1 bg-white border-dark-4 text-dark-4"
@@ -53,7 +49,7 @@ const ModalProgressBar= ({show, onDismiss}) => {
         </button>
       ) : (
         <button
-          onClick={onDismiss}
+        onClick={onDismiss}
           className="h-40 px-30 mt-20 fw-600 mb-20 -dark-1 bg-white border-dark-4 text-dark-4"
         >
           Dismiss Build

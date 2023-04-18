@@ -13,6 +13,9 @@ import LocationTopBar from "../components/common/LocationTopBar";
 import CallToActions from "../components/startSelling/CallToActions";
 import FilterTemplatesSection  from "../components/startSelling/FilterTemplatesSection";
 import FilterSoftwareCodeSection  from "../components/startSelling/FilterSoftwareCodeSection";
+import FilterDomainSection from "../components/startSelling/FilterDomainSection";
+import FilterEcommerceSection from "../components/startSelling/FilterEcommerceSection";
+import FilterAISection from "../components/startSelling/FilterAISection"; 
 
 const StartListing = () => {
   const [selectedButton, setSelectedButton] = useState("button1");
@@ -62,8 +65,8 @@ const StartListing = () => {
        img:"/img/startselling/display.png" },
     { id: "button2", icon: "icon-destination",img:"/img/startselling/display.png" ,catName: "Templates" },
     { id: "button3", icon: "icon-ski",img:"/img/startselling/display.png", catName: "Software Code" },
-    { id: 4, icon: "icon-home", img:"/img/startselling/display.png",catName: "Themes" },
-    { id: 5, icon: "icon-car", img:"/img/startselling/display.png",catName: "Businesses" },
+    { id: "button4", icon: "icon-home", img:"/img/startselling/display.png",catName: "Ecommerce" },
+    { id: "button5", icon: "icon-car", img:"/img/startselling/display.png",catName: "AI Products" },
     { id: 6, icon: "icon-yatch",img:"/img/startselling/display.png", catName: " Plugins" },
     { id: 7, icon: "icon-tickets", img:"/img/startselling/display.png",catName: "Websites" },
   ];
@@ -120,19 +123,17 @@ const StartListing = () => {
           {/* border separation */} 
           {selectedButton === "button1" &&
               <div>
-          
-          
-         <CallToActions/>
-         
-      {/* End CallToActions */}
-      
-        
-         
+                    <CallToActions/>
           <div className="pt-30 mt-20 border-top-light" />
           {/* border separation */}
+          
         <div className="container">
+        <div className="col-auto">
+          <h2 className="text-22 fw-600 mt-20 mb-30">Select Listing Category</h2>
+          <FilterDomainSection/>
+          </div>
           <div className="col-auto">
-          <h2 className="text-22 fw-600 mt-30">Enter Domain Details</h2>
+          <h2 className="text-22 fw-600 mt-40">Enter Domain Details</h2>
           </div>
       <div className="container mt-30">
       <div className="row mb-10">
@@ -157,7 +158,18 @@ const StartListing = () => {
        </div>
      </div>
    </div>
+   <div className="row justify-center mt-40">
+   <div className="col-auto">
+   <Link
+   href="/startselling/addDomainproductdetails"
+   className="button h-50 w-250 -outline-blue-1 text-blue-1"
+ >
+   Get Started 
+ </Link>
+ </div>
+</div>
    </div>
+   
           }
   {selectedButton === "button2" && 
    <div className="row y-gap-10 mt-6 x-gap-20">
@@ -171,7 +183,15 @@ const StartListing = () => {
 
 </label>
 </div>
-</div></div>
+</div> <div className="row justify-center mt-40">
+<Link
+         href="/startselling/addTemplateproductdetails"
+         className="button h-50 w-250 -outline-blue-1 text-blue-1"
+       >
+         Get Started 
+       </Link>
+ </div>
+</div>
 
 }
 
@@ -187,42 +207,61 @@ const StartListing = () => {
 
 </label>
 </div>
-</div></div>
-
-}
-   </div>
-         
-   </section>
-    
-
-     <div className="row justify-center mt-10">
-     <div className="col-auto">
-     {selectedButton === "button1" && 
-       <Link
-         href="/startselling/addDomainproductdetails"
-         className="button h-50 w-250 -outline-blue-1 text-blue-1"
-       >
-         Get Started 
-       </Link>
-}
-{selectedButton === "button2" && 
-<Link
-         href="/startselling/addTemplateproductdetails"
-         className="button h-50 w-250 -outline-blue-1 text-blue-1"
-       >
-         Get Started 
-       </Link>}
-       {selectedButton === "button3" && 
+</div>
+<div className="row justify-center mt-40">
 <Link
          href="/startselling/addSoftwarecodedetails"
          className="button h-50 w-250 -outline-blue-1 text-blue-1"
        >
          Get Started 
-       </Link>}
-     </div>
-   </div>
+       </Link></div></div>
+}
+{selectedButton === "button4" && 
+   <div className="row y-gap-10 mt-6 x-gap-20">
+   <h2 className="text-22 fw-600  mt-30 mb-20 ">Select Ecommerce Category</h2>
+<FilterEcommerceSection/>
+<div className="col-md-5 mt-40">
+<h6 className="text-22 fw-600 mb-30">Enter your Ecommerce Business Name</h6>
+<div className="form-input">
+<input  type="text" required />
+<label className="lh-1 text-16 text-light-1">
 
-      <DefaultFooter />
+</label>
+</div>
+</div>
+<div className="row justify-center mt-40">
+<Link
+         href="/startselling/addecommerceproductdetails"
+         className="button h-50 w-250 -outline-blue-1 text-blue-1"
+       >
+         Get Started 
+       </Link></div></div>
+}
+{selectedButton === "button5" &&
+<div className="row y-gap-10 mt-6 x-gap-20">
+   <h2 className="text-22 fw-600 mt-30 mb-20 ">Select AI Product Details</h2>
+<FilterAISection/>
+<div className="col-md-4 mt-40">
+<h6 className="text-22 fw-600 mb-30">Where is your product best Used?</h6>
+<div className="form-input">
+<input  type="text" required />
+
+</div>
+</div>
+ <div className="row justify-center mt-40">
+<Link
+         href="/startselling/addAIproductdetails"
+         className="button h-50 w-250 -outline-blue-1 text-blue-1"
+       >
+         Get Started 
+       </Link>
+ </div>
+</div>
+}
+   </div>       
+   </section>
+    
+  <DefaultFooter />
       {/* End Call To Actions Section */}
     </>
   );
