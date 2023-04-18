@@ -1,7 +1,8 @@
+import Link from "next/link"
 import { useState } from "react";
 import Dropdown from "../common/Dropdown";
 
-const FilterTemplatesSection = () => {
+const ListingAISection = () => {
   const [typevalue, setTypevalue] = useState("Select AI Product");
  const [categoryvalue, setCategoryvalue] = useState("Category Type");
 
@@ -33,6 +34,8 @@ const FilterTemplatesSection = () => {
 
   return (
     <>
+    <div className="row y-gap-10 mt-6 x-gap-20">
+   <h2 className="text-22 fw-600 mt-30 mb-20 ">Select AI Product Details</h2>
     <div className="row mb-10">
     <div className="d-flex flex-wrap   sm:justify-center justify-content">
     
@@ -44,8 +47,24 @@ const FilterTemplatesSection = () => {
    
     </div>
   </div>
+  <div className="col-md-4 mt-40">
+<h6 className="text-22 fw-600 mb-30">Where is your product best Used?</h6>
+<div className="form-input">
+<input  type="text" required />
+
+</div>
+</div>
+ <div className="row justify-center mt-40">
+<Link
+         href="/startselling/addAIproductdetails"
+         className="button h-50 w-250 -outline-blue-1 text-blue-1"
+       >
+         Get Started 
+       </Link>
+ </div>
+</div>
     </>
   );
 };
 
-export default FilterTemplatesSection;
+export default ListingAISection;
