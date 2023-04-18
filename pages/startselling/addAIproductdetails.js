@@ -2,7 +2,7 @@
 import Seo from "../../components/common/Seo";
 import Header1 from "../../components/header/header-1";
 import DefaultFooter from "../../components/footer/default";
-import Step from "../../components/startSelling/addAIproductDetails/step";
+import Step from "../../components/startSelling/addAIProductDetails/step";
 
 const index = () => {
   return (
