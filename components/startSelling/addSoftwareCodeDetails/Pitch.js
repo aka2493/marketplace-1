@@ -1,5 +1,4 @@
-import Link from "next/link";
-//import BookingDetails from "./sidebar/BookingDetails";
+
 
 const PitchandSales= () => {
   
@@ -7,7 +6,7 @@ const PitchandSales= () => {
     <>
       <div className="col-xl-8 col-lg-8 mt-30">
         <div className="py-15 px-20 rounded-4 mt-30 text-15 bg-green-1">
-        Describe Product and get in front of buyers looking for similar domains by categorizing and mentioniing the age
+        Describe Product and get in front of buyers looking for similar softwares/code by categorizing and mentioniing the age
           
         </div>
         {/* End register notify */}
@@ -51,7 +50,6 @@ const PitchandSales= () => {
           </div>
           {/* End col-12 */} 
           
-      
           <div className="col-md-12">
           <h2 className="text-18 fw-500 mt-10 mb-24">Enter HTML Description</h2>
             <div className="form-input">
@@ -61,9 +59,7 @@ const PitchandSales= () => {
               </label>
             </div>
           </div>
-        
-      
-         
+          
         </div>
         {/* End .row */}
       </div>

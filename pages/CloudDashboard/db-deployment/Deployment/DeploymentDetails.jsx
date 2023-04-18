@@ -7,14 +7,14 @@ const DeploymentDetails = () => {
     const [stackValue, setStackValue] = useState("Mean Stack");
     const [show, setShow] = useState(false); // initialize a state variable to control modal visibility
     const [showDeployedComponent,setShowDeployedComponent] =useState(false);
-  
-
-  const handleShow = () => {
+ 
+   const handleShow = () => {
   setShow(true);
 
   }
   const handleClose = (status) => {
     setShow(false);
+  
     if (status === "deployed") {
       setShowDeployedComponent(true);
     }
@@ -140,10 +140,12 @@ const DeploymentDetails = () => {
   Save Deployment Plan
 </button>
 
-   <button onClick={handleShow} className="h-40 px-40 mt-40 ml-30 mb-20 -dark-1 bg-dark-4 text-white">
+   <button onClick={handleShow} className="h-40 cursor-pointer px-40 mt-40 ml-30 mb-20 -dark-1 bg-dark-4 text-white">
       Build and Deploy
     </button>
-    <ModalProgressBar show={show} onDismiss={handleClose}/>{/* render modal component based on state */}
+    {show && <ModalProgressBar show={show} 
+    onDismiss={handleClose}/>
+  }
         </div>
     )}
     

@@ -6,7 +6,7 @@ const PitchandSales= () => {
     <>
       <div className="col-xl-8 col-lg-8 mt-30">
         <div className="py-15 px-20 rounded-4 mt-30 text-15 bg-green-1">
-        Describe Product and get in front of buyers looking for similar domains by categorizing and mentioniing the age
+        Describe Product and get in front of buyers looking for similar Ecommerce Business by categorizing and mentioniing the age
           
         </div>
         {/* End register notify */}
@@ -18,15 +18,14 @@ const PitchandSales= () => {
        
         <div className="row x-gap-20 y-gap-20 pt-10">
        <div className="col-md-12 d-flex align-items-center">
-     
-          <h6 className="text-18 fw-500 mt-10 mb-22">Enter your Template Name
+     <h6 className="text-18 fw-500 mt-10 mb-22">Enter your Business Description
           </h6>
-           <h6 className="text-15 fw-normal text-light-1 ml-10 mt-10 mb-22">(ex.Canvas | The Multipurpose HTML5 Template)</h6> 
+         {/*  <h6 className="text-15 fw-normal text-light-1 ml-10 mt-10 mb-22">(ex.Canvas | The Multipurpose HTML5 Template)</h6>*/} 
            </div> 
-           <div className="form-input col-md-6">
+           <div className="form-input col-md-8">
            <input type="text" required />
            <label className="lh-1 mt-10 text-16  text-light-1">
-         Description Heading
+         Description
            </label>
          </div>
             
@@ -47,7 +46,7 @@ const PitchandSales= () => {
           
       
           <div className="col-md-12">
-          <h2 className="text-18 fw-500 mt-10 mb-24">Enter HTML Description</h2>
+          <h2 className="text-18 fw-500 mt-10 mb-24">Enter Product Reviews</h2>
             <div className="form-input">
               <textarea required rows={5} defaultValue={""} />
               <label className="lh-1 text-16 text-light-1">

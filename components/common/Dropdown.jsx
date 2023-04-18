@@ -10,9 +10,10 @@ const Dropdown = ({ title, value, options, onChange }) => {
 
   return (
    
-      <div className="dropdown js-dropdown  js-amenities-active">
+      <div className="dropdown js-dropdown js-amenities-active">
         <div
           className="dropdown_button d-flex  w-full items-center justify-center text-14 rounded-100 border-light py-30 px-60 h-34"
+          style={{ whiteSpace: "nowrap" }}
           data-bs-toggle="dropdown"
           data-bs-auto-close="true"
           aria-expanded="false"

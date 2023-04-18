@@ -1,14 +1,12 @@
 import {useState} from 'react';
 import Image from "next/image"
-import InputWithSuggestionsAndTags from "./../../common/InputWithSuggestionsAndTags"
+import InputWithSuggestionsAndTags from "../../common/InputWithSuggestionsAndTags"
 
 
 const CategoryandTags= () => {
   const [users, setUsers] = useState([0]);
-  const [showRemoveButton, setShowRemoveButton] = useState(false);
-
-  
-  const addUser = () => {
+ 
+ const addUser = () => {
    
     if (users.length < 2) { // limit to a maximum of 2 extra users
       setUsers([...users, {}]); // add an empty object to the users array
@@ -60,7 +58,7 @@ const CategoryandTags= () => {
                 <div className="form-input ">
                   <input type="text" required />
                   <label className="lh-1 text-16 text-light-1">
-                   url
+                   website url
                   </label>
                 </div>
               </div>
@@ -72,7 +70,7 @@ const CategoryandTags= () => {
                   
                   <div className="form-input ">
                     <input type="text" required />
-                    <label className="lh-1 text-16 text-light-1">Username</label>
+                    <label className="lh-1 text-16 text-light-1">Phone Number</label>
                   </div>
                 </div>
                 {/* End col-12 */}
@@ -82,7 +80,7 @@ const CategoryandTags= () => {
                 <div className="form-input ">
                   <input type="text" required />
                   <label className="lh-1 text-16 text-light-1">
-                   Password
+                    ZIP code/Postal code
                   </label>
                 </div>
               </div>

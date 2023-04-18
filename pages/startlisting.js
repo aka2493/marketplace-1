@@ -10,9 +10,11 @@ import DefaultFooter from "../components/footer/default";
 import Link from "next/link";
 import LocationTopBar from "../components/common/LocationTopBar";
 
-import CallToActions from "../components/startSelling/CallToActions";
-import FilterTemplatesSection  from "../components/startSelling/FilterTemplatesSection";
-import FilterSoftwareCodeSection  from "../components/startSelling/FilterSoftwareCodeSection";
+import ListingTemplateSection  from "../components/startSelling/ListingTemplateSection";
+import ListingSoftwareCodeSection  from "../components/startSelling/ListingSoftwareCodeSection";
+import ListingDomainSection from "../components/startSelling/ListingDomainSection";
+import ListingEcommerceSection from "../components/startSelling/ListingEcommerceSection";
+import ListingAISection from "../components/startSelling/ListingAISection";
 
 const StartListing = () => {
   const [selectedButton, setSelectedButton] = useState("button1");
@@ -57,13 +59,11 @@ const StartListing = () => {
     ],
   };
   const catContent = [
-    { id: "button1",
-       catName: "Domains",
-       img:"/img/startselling/display.png" },
+    { id: "button1",catName: "Domains",img:"/img/startselling/display.png" },
     { id: "button2", icon: "icon-destination",img:"/img/startselling/display.png" ,catName: "Templates" },
     { id: "button3", icon: "icon-ski",img:"/img/startselling/display.png", catName: "Software Code" },
-    { id: 4, icon: "icon-home", img:"/img/startselling/display.png",catName: "Themes" },
-    { id: 5, icon: "icon-car", img:"/img/startselling/display.png",catName: "Businesses" },
+    { id: "button4", icon: "icon-home", img:"/img/startselling/display.png",catName: "Ecommerce" },
+    { id: "button5", icon: "icon-car", img:"/img/startselling/display.png",catName: "AI Products" },
     { id: 6, icon: "icon-yatch",img:"/img/startselling/display.png", catName: " Plugins" },
     { id: 7, icon: "icon-tickets", img:"/img/startselling/display.png",catName: "Websites" },
   ];
@@ -119,110 +119,27 @@ const StartListing = () => {
           <div className="pt-20 mt-20 border-top-light" />
           {/* border separation */} 
           {selectedButton === "button1" &&
-              <div>
-          
-          
-         <CallToActions/>
-         
-      {/* End CallToActions */}
-      
-        
-         
-          <div className="pt-30 mt-20 border-top-light" />
-          {/* border separation */}
-        <div className="container">
-          <div className="col-auto">
-          <h2 className="text-22 fw-600 mt-30">Enter Domain Details</h2>
-          </div>
-      <div className="container mt-30">
-      <div className="row mb-10">
-         <div className="col-md-6 mb-3 mb-md-0">
-         <h6 className="mb-2">Domain Name</h6>
-           <div className="form-input">
-           <input type="text" required />
-           <label className="lh-1 text-16 text-light-1">
-          Enter Domain Name
-           </label>
-           </div>
-           </div>
-         <div className="col-md-6">
-         <h6 className="mb-2 ">Domain Keyword</h6>
-         <div className="form-input">
-         <input type="text" required />
-         <label className="lh-1 text-16 text-light-1">
-        Enter Domain Keyword
-         </label>
-         </div>
-         </div>
-       </div>
-     </div>
-   </div>
-   </div>
+         <ListingDomainSection/>
+   
           }
   {selectedButton === "button2" && 
-   <div className="row y-gap-10 mt-6 x-gap-20">
-   <h2 className="text-22 fw-600 mt-30 mb-20 ">Select Product Type</h2>
-<FilterTemplatesSection/>
-<div className="col-md-5 mt-40">
-<h6 className="text-22 fw-600 mb-30">Enter Version&nbsp;(optional)</h6>
-<div className="form-input">
-<input  type="text" required />
-<label className="lh-1 text-16 text-light-1">
-
-</label>
-</div>
-</div></div>
-
+  <ListingTemplateSection/>
 }
 
 {selectedButton === "button3" && 
-   <div className="row y-gap-10 mt-6 x-gap-20">
-   <h2 className="text-22 fw-600  mt-30 mb-20 ">Select Software/Code Type</h2>
-<FilterSoftwareCodeSection/>
-<div className="col-md-5 mt-40">
-<h6 className="text-22 fw-600 mb-30">Enter Version&nbsp;(optional)</h6>
-<div className="form-input">
-<input  type="text" required />
-<label className="lh-1 text-16 text-light-1">
-
-</label>
-</div>
-</div></div>
-
+<ListingSoftwareCodeSection/>
 }
-   </div>
-         
+
+{selectedButton === "button4" && 
+   <ListingEcommerceSection/>
+}
+{selectedButton === "button5" &&
+<ListingAISection/>
+}
+   </div>       
    </section>
     
-
-     <div className="row justify-center mt-10">
-     <div className="col-auto">
-     {selectedButton === "button1" && 
-       <Link
-         href="/startselling/addDomainproductdetails"
-         className="button h-50 w-250 -outline-blue-1 text-blue-1"
-       >
-         Get Started 
-       </Link>
-}
-{selectedButton === "button2" && 
-<Link
-         href="/startselling/addTemplateproductdetails"
-         className="button h-50 w-250 -outline-blue-1 text-blue-1"
-       >
-         Get Started 
-       </Link>}
-       {selectedButton === "button3" && 
-<Link
-         href="/startselling/addSoftwarecodedetails"
-         className="button h-50 w-250 -outline-blue-1 text-blue-1"
-       >
-         Get Started 
-       </Link>}
-     </div>
-   </div>
-
-      <DefaultFooter />
+  <DefaultFooter />
       {/* End Call To Actions Section */}
     </>
   );
