@@ -17,13 +17,9 @@ const Files= () => {
         <span className="text-40 fw-600">2</span>
         <span className="text-20 fw-400">/4</span>
     </div>
-        <h2 className="text-26 fw-500 mt-40 md:mt-24">
-    Files
-        </h2>
-       
-        <div className="row x-gap-20 y-gap-20 pt-20">
-    
-        <div className="col-md-8">
+     
+ <div className="row x-gap-20 y-gap-20 pt-20">
+     <div className="col-md-8">
         <span>
         <h2 className="text-18 fw-500 mt-10 mb-2">Thumbnail</h2>
       <h6 className="text-15 fw-normal  text-light-1">Upload Thumbnail in JPEG or PNG&nbsp;(80x80px) format</h6> 

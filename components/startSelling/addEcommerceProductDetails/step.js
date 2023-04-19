@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import Pitch from "./Pitch";
-import CatgeoryandTags from "./CategoryandTags";
-import PriceandComments from "./PriceandComments";
-import Files from "./Files"
+import ProductDetails from "./ProductDetails";
+import InventoryandShipping from "./InventoryandShipping";
+import CategoryDetails from "./CategoryDetails"
 
 const Index = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const steps = [
     {
-      title: "Pitch and Sales",
+      title: "Product Details",
       stepNo: "1",
       stepBar: (
         <>
@@ -17,10 +16,10 @@ const Index = () => {
           </div>
         </>
       ),
-      content: <Pitch />,
+      content: <ProductDetails />,
     },
     {
-      title: "Files",
+      title: "Category Details",
       stepNo: "2",
       stepBar: (
         <>
@@ -29,25 +28,14 @@ const Index = () => {
           </div>
         </>
       ),
-      content: <Files/>,
+      content: <CategoryDetails/>,
     },
+    
     {
-      title: "Category and Tags",
+      title: "Inventory and Shipping",
       stepNo: "3",
-      stepBar: (
-        <>
-          <div className="col d-none d-sm-block">
-            <div className="w-full h-1 bg-border"></div>
-          </div>
-        </>
-      ),
-      content: <CatgeoryandTags/>,
-    },
-    {
-      title: "Price and Comments",
-      stepNo: "4",
       stepBar: "",
-      content: <PriceandComments />,
+      content: <InventoryandShipping/>,
     },
   ];
 
