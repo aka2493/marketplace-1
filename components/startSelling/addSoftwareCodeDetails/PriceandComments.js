@@ -19,16 +19,10 @@ const PriceandComments= () => {
         <span className="text-40 fw-600">4</span>
         <span className="text-20 fw-400">/4</span>
     </div>
-        <h2 className="text-26 fw-500 mt-40 md:mt-24">
-   Price and Comments
-        </h2>
-       
+      
         <div className="row x-gap-20 y-gap-20 pt-20">
-       
-   
-          <div className="col-md-12 d-flex align-items-center">
-     
-          <h6 className="text-20 fw-500 mt-10 mb-22">Set Your Price
+       <div className="col-md-12 d-flex align-items-center">
+     <h6 className="text-20 fw-500 mt-10 mb-22">Set Your Price
           </h6>
            <h6 className="text-18 fw-500  ml-10 mt-10 mb-22">(US$)</h6> 
            </div> 

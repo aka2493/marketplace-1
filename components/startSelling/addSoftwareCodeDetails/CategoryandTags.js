@@ -27,16 +27,10 @@ const CategoryandTags= () => {
         </div>
         {/* End register notify */}
         <div className="mb-6 xl:mb-8 mt-20">
-        <span className="text-40 fw-600">1</span>
+        <span className="text-40 fw-600">3</span>
         <span className="text-20 fw-400">/4</span>
     </div>
-        <h2 className="text-26 fw-500 mt-40 md:mt-24">
-    Category and Tags
-        </h2>
-       
-       
-       
-          <div className="col-md-8">
+     <div className="col-md-8">
           <span>
           <h2 className="text-18 fw-500 mt-30 mb-2">Demo/Live Preview URL</h2>
         <h6 className="text-15 fw-normal  text-light-1">Link to a live preview on your own hosting i.e https://my-sitecom/demo/</h6> 
