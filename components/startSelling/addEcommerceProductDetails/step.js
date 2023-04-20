@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProductDetails from "./ProductDetails";
 import InventoryandShipping from "./InventoryandShipping";
 import CategoryDetails from "./CategoryDetails"
+import Pricing from "./Pricing"
 
 const Index = () => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -19,8 +20,20 @@ const Index = () => {
       content: <ProductDetails />,
     },
     {
-      title: "Category Details",
+      title: "Pricing",
       stepNo: "2",
+      stepBar: (
+        <>
+          <div className="col d-none d-sm-block">
+            <div className="w-full h-1 bg-border"></div>
+          </div>
+        </>
+      ),
+      content: <Pricing/>,
+    },
+    {
+      title: "Category Details",
+      stepNo: "3",
       stepBar: (
         <>
           <div className="col d-none d-sm-block">
@@ -47,14 +60,17 @@ const Index = () => {
   const nextStep = () => {
     if (currentStep < steps.length - 1) {
       setCurrentStep(currentStep + 1);
+      window.scrollTo(0, 0);
     }
   };
 
   const previousStep = () => {
     if (currentStep > 0) {
       setCurrentStep(currentStep - 1);
+      window.scrollTo(0, 0);
     }
   };
+  const isLastStep = currentStep === steps.length - 1;
 
   return (
     <>
@@ -84,7 +100,7 @@ const Index = () => {
                   )}
                 </div>
 
-                <div className="text-26 fw-500 ml-10"> {step.title}</div>
+                <div className={ currentStep === index ?"text-20 text-blue-1 fw-600 ml-10":"text-20 fw-100 ml-10"}> {step.title}</div>
               </div>
             </div>
             {/* End .col */}
@@ -109,15 +125,27 @@ const Index = () => {
         </div>
         {/* End prvious btn */}
 
-        <div className="col-auto">
+        {isLastStep  ?(
+          <div className="col-auto">
           <button
             className="button h-60 px-24 -dark-1 bg-blue-1 text-white"
-            disabled={currentStep === steps.length - 1}
-            onClick={nextStep}
+     
           >
-            Next <div className="icon-arrow-top-right ml-15" />
+            Submit<div className="icon-arrow-top-right ml-15" />
           </button>
-        </div>
+          </div>
+          ):(
+          <div className="col-auto">
+            <button
+              className="button h-60 px-24 -dark-1 bg-blue-1 text-white"
+             
+              onClick={nextStep}
+            >
+              Next <div className="icon-arrow-top-right ml-15" />
+            </button>
+  
+          </div>
+          )} 
         {/* End next btn */}
       </div>
       {/* End stepper button */}

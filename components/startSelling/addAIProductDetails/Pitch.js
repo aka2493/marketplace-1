@@ -1,4 +1,4 @@
-const PitchandSales= () => {
+const PitchandSales= ({typevalue}) => {
   
     return (
       <>
@@ -10,7 +10,7 @@ const PitchandSales= () => {
           {/* End register notify */}
           <div className="mb-6 xl:mb-8 mt-20">
           <span className="text-40 fw-600">1</span>
-          <span className="text-20 fw-400">/4</span>
+          {typevalue !== "AI models" ? <span className="text-20 fw-400">/3</span> : <span className="text-20 fw-400">/4</span>} 
       </div>        
           <div className="row x-gap-20 y-gap-20 pt-10">
          <div className="col-md-12 d-flex align-items-center">      

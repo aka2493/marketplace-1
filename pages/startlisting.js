@@ -59,12 +59,12 @@ const StartListing = () => {
     ],
   };
   const catContent = [
-    { id: "button1",catName: "Domains",img:"/img/startselling/display.png" },
-    { id: "button2", icon: "icon-destination",img:"/img/startselling/display.png" ,catName: "Templates" },
-    { id: "button3", icon: "icon-ski",img:"/img/startselling/display.png", catName: "Software Code" },
-    { id: "button4", icon: "icon-home", img:"/img/startselling/display.png",catName: "Ecommerce" },
-    { id: "button5", icon: "icon-car", img:"/img/startselling/display.png",catName: "AI Products" },
-    { id: 6, icon: "icon-yatch",img:"/img/startselling/display.png", catName: " Plugins" },
+    { id: "button1",catName: "AI Products",img:"/img/startselling/display.png" },
+    { id: "button2", icon: "icon-destination",img:"/img/startselling/display.png" ,catName: "Domains" },
+    { id: "button3", icon: "icon-ski",img:"/img/startselling/display.png", catName: "Ecommerce" },
+    { id: "button4", icon: "icon-home", img:"/img/startselling/display.png",catName: "Plugins" },
+    { id: "button5", icon: "icon-car", img:"/img/startselling/display.png",catName: "Software Code" },
+    { id: "button6", icon: "icon-yatch",img:"/img/startselling/display.png", catName: "Templates" },
     { id: 7, icon: "icon-tickets", img:"/img/startselling/display.png",catName: "Websites" },
   ];
   return (
@@ -119,23 +119,25 @@ const StartListing = () => {
           <div className="pt-20 mt-20 border-top-light" />
           {/* border separation */} 
           {selectedButton === "button1" &&
-         <ListingDomainSection/>
+         <ListingAISection/>
    
           }
   {selectedButton === "button2" && 
-  <ListingTemplateSection/>
+  <ListingDomainSection/>
 }
 
 {selectedButton === "button3" && 
-<ListingSoftwareCodeSection/>
+<ListingEcommerceSection/>
 }
 
-{selectedButton === "button4" && 
-   <ListingEcommerceSection/>
+{selectedButton === "button5" && 
+   <ListingSoftwareCodeSection/>
 }
-{selectedButton === "button5" &&
-<ListingAISection/>
+{selectedButton === "button6" &&
+<ListingTemplateSection/>
 }
+
+
    </div>       
    </section>
     

@@ -20,7 +20,7 @@ const ListingEcommerceSection = () => {
         "Business and Startups",
         "Cloud Servers and Security",
         "Fashion",
-        "Digital Marketing",
+        "Digital Products",
         "Entertainment",
         "Education",
       ],
@@ -71,7 +71,9 @@ const ListingEcommerceSection = () => {
         </div>
         <div className="row justify-center mt-40">
           <Link
+           
             href="/startselling/addecommerceproductdetails"
+        
             className="button h-50 w-250 -outline-blue-1 text-blue-1"
           >
             Get Started

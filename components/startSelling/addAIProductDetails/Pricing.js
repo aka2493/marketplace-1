@@ -1,16 +1,16 @@
 
-const Subscription = () => {
+const Pricing = ({typevalue}) => {
   
     return (
       <>
         <div className="col-xl-8 col-lg-8 mt-30">
           <div className="py-15 px-20 rounded-4 mt-30 text-15 bg-green-1">
-          List down Subscription Plans for your AI Product.
+          List down Pricing for your AI Products.
           </div>
           {/* End register notify */}
           <div className="mb-6 xl:mb-8 mt-20">
           <span className="text-40 fw-600">2</span>
-          <span className="text-20 fw-400">/4</span>
+          {typevalue !== "AI models" ? <span className="text-20 fw-400">/3</span> : <span className="text-20 fw-400">/4</span>} 
       </div>
           <div className="row x-gap-20 y-gap-20 pt-20">
          <div className="col-md-12 d-flex align-items-center">
@@ -61,5 +61,5 @@ const Subscription = () => {
     );
   };
   
-  export default Subscription;
+  export default Pricing;
   
