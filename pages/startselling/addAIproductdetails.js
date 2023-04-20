@@ -4,7 +4,7 @@ import Header1 from "../../components/header/header-1";
 import DefaultFooter from "../../components/footer/default";
 import Step from "../../components/startSelling/addAIProductDetails/step";
 
-const index = () => {
+const Index = () => {
   const router = useRouter();
   const { typevalue } = router.query;
 
@@ -34,4 +34,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
