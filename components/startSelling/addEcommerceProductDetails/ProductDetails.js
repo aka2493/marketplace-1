@@ -12,7 +12,7 @@ const ProductDetails = () => {
         {/* End register notify */}
         <div className="mb-6 xl:mb-8 mt-20">
           <span className="text-40 fw-600">1</span>
-          <span className="text-20 fw-400">/3</span>
+          <span className="text-20 fw-400">/4</span>
         </div>
 
         <div className="row x-gap-20 y-gap-20 pt-10">
@@ -52,41 +52,10 @@ const ProductDetails = () => {
             </div>
           </div>
           {/* End col-12 */}
-          <div className="row">
-            <div
-              className="mt-10 mb-20 price"
-              style={{ gap: "20px", display: "flex" }}
-            >
-              <div className="col-md-6">
-                <h2 className="text-18 fw-500">Price</h2>
-                <div className="form-input mt-10">
-                  <input type="text" required />
-                  <label className="lh-1 text-16 text-light-1">US$</label>
-                </div>
-              </div>
-
-              {/* End col-12 */}
-
-              <div className="col-md-6">
-                <h2 className="text-18 fw-500">Sale Price(US$)</h2>
-                <div className="form-input mt-10">
-                  <input type="text" required />
-                  <label className="lh-1 text-16 text-light-1">US$</label>
-                </div>
-              </div>
-            </div>
-          </div>
+         
           {/* End col-12 */}
 
-          <div className="col-md-12 mb-20">
-            <h2 className="text-18 fw-500 mt-10 mb-24">
-              Enter Product Reviews
-            </h2>
-            <div className="form-input">
-              <input type="text" required />
-            </div>
-          </div>
-
+      
           <span>
             <h2 className="text-18 fw-500 mb-2">Product Images</h2>
             <h6 className="text-15 fw-normal text-light-1 mb-30">

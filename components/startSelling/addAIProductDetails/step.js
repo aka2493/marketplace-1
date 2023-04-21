@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import Pitch from "./Pitch";
-import Subscription from "./Sales";
+import Pricing from "./Pricing";
 import ScoreandEfficiency from "./ScoreandEfficiency";
 import Demo from "./Demo"
 
-const Index = () => {
+
+const Index = ({typevalue}) => {
   const [currentStep, setCurrentStep] = useState(0);
-  const steps = [
+
+  var steps = [
     {
       title: "The Pitch",
       stepNo: "1",
@@ -17,10 +19,10 @@ const Index = () => {
           </div>
         </>
       ),
-      content: <Pitch />,
+      content: <Pitch typevalue={typevalue} />,
     },
     {
-      title: "Subscription",
+      title: "Pricing",
       stepNo: "2",
       stepBar: (
         <>
@@ -29,7 +31,7 @@ const Index = () => {
           </div>
         </>
       ),
-      content: <Subscription/>,
+      content: <Pricing typevalue={typevalue}/>,
     },
     {
       title: "Score and Efficiency",
@@ -40,35 +42,45 @@ const Index = () => {
             <div className="w-full h-1 bg-border"></div>
           </div>
         </>
-      ),
-      content: <ScoreandEfficiency/>,
+      ), 
+      content:  <ScoreandEfficiency/>,
+      
     },
     {
       title: "Demo",
-      stepNo: "4",
+      stepNo:typevalue !== "AI models" ? "3" : "4",
       stepBar: "",
-      content: <Demo/>,
+      content: <Demo typevalue={typevalue}/>,
     },
     
   ];
 
+  if (typevalue !== "AI models") {
+    steps = steps.filter((step, index) => index !== 2);
+    
+  }
+
   const renderStep = () => {
-    const { content } = steps[currentStep];
-    return <>{content}</>;
+   const { content } = steps[currentStep];
+      return <>{content}</>;
+
   };
 
   const nextStep = () => {
     if (currentStep < steps.length - 1) {
       setCurrentStep(currentStep + 1);
+      window.scrollTo(0, 0);
     }
+ 
   };
 
   const previousStep = () => {
     if (currentStep > 0) {
       setCurrentStep(currentStep - 1);
+      window.scrollTo(0, 0);
     }
   };
-
+  const isLastStep = currentStep === steps.length - 1;
   return (
     <>
       <div className="row x-gap-20 y-gap-30 items-center">
@@ -96,8 +108,7 @@ const Index = () => {
                     </>
                   )}
                 </div>
-
-                <div className="text-26 fw-500 ml-10"> {step.title}</div>
+<div className={ currentStep === index ?"text-20 text-blue-1 fw-600 ml-10":"text-20 fw-100 ml-10"}> {step.title}</div>
               </div>
             </div>
             {/* End .col */}
@@ -121,16 +132,27 @@ const Index = () => {
           </button>
         </div>
         {/* End prvious btn */}
-
+       {isLastStep  ?(
+        <div className="col-auto">
+        <button
+          className="button h-60 px-24 -dark-1 bg-blue-1 text-white"
+   
+        >
+          Submit<div className="icon-arrow-top-right ml-15" />
+        </button>
+        </div>
+        ):(
         <div className="col-auto">
           <button
             className="button h-60 px-24 -dark-1 bg-blue-1 text-white"
-            disabled={currentStep === steps.length - 1}
+          
             onClick={nextStep}
           >
             Next <div className="icon-arrow-top-right ml-15" />
           </button>
+
         </div>
+        )}       
         {/* End next btn */}
       </div>
       {/* End stepper button */}

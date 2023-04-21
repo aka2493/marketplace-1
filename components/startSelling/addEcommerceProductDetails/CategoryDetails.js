@@ -1,6 +1,6 @@
 import Link from "next/link"
 import UploadDragandDropImages from "../addTemplateProductDetails/uploadDragandDropImages";
-import InputWithSuggestionsAndTags from "./InputWithSuggestions";
+
 
 const CategoryDetails = () => {
   
@@ -9,15 +9,25 @@ const CategoryDetails = () => {
       <div className="col-xl-8 col-lg-8 mt-30">
      
       <div className="mb-6 xl:mb-8 mt-20">
-      <span className="text-40 fw-600">2</span>
-      <span className="text-20 fw-400">/3</span>
+      <span className="text-40 fw-600">3</span>
+      <span className="text-20 fw-400">/4</span>
     </div>
     <div className="row x-gap-20 y-gap-20 pt-10">
     
      
         <div className="col-md-12">
-          <h2 className="text-18 fw-500 mb-20">Add categories</h2>
-          <InputWithSuggestionsAndTags/>
+          <h2 className="text-18 fw-500 mb-20">Select categories</h2>
+          <div className="dropdown col-md-6 js-dropdown js-price-1-active">
+          <select className="form-select dropdown__button d-flex items-center rounded-4 border-light px-15 h-50 text-14">
+            <option value="1" defaultValue>
+              Loreum
+            </option>
+            <option value="2">Loreum</option>
+            <option value="3">Loreum</option>
+            <option value="4">Loreum</option>
+           
+          </select>
+        </div>
         </div>
 
         {/* End col-12 */}

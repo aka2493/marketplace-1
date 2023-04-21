@@ -5,6 +5,7 @@ import DefaultFooter from "../../components/footer/default";
 import Step from "../../components/startSelling/addEcommerceProductDetails/step";
 
 const index = () => {
+ 
   return (
     <>
       <Seo pageTitle="List your Software for sale" />

@@ -31,7 +31,6 @@ const ListingAISection = () => {
       },
   ];
 
-
   return (
     <>
     <div className="row y-gap-10 mt-6 x-gap-20">
@@ -56,8 +55,10 @@ const ListingAISection = () => {
 </div>
  <div className="row justify-center mt-40">
 <Link
-         href="/startselling/addAIproductdetails"
+         href={{pathname:"/startselling/addAIproductdetails",
+         query: { typevalue: typevalue },}}
          className="button h-50 w-250 -outline-blue-1 text-blue-1"
+        
        >
          Get Started 
        </Link>

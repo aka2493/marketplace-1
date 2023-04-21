@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const InventoryandShipping = () => {
   const options = [
-    { label: "Compute the shipping cost using the shipping methods"  },
-    { label: "The item ships free"},
-    { label: "Specify a shipping fee for this product" },
-   
+    { label: "Instant Delivery (within few minutes)"  },
+    { label: "Same Day Delivery (within few hours)"},
+    { label: "Standard Delivery (0-15 days) "}, 
   ];
+  
   return (
     <>
       <div className="col-xl-8 col-lg-8 mt-30">
@@ -15,8 +15,8 @@ const InventoryandShipping = () => {
           Ecommerce Business by categorizing and mentioniing the age
         </div>
         <div className="mb-6 xl:mb-8 mt-20">
-          <span className="text-40 fw-600">3</span>
-          <span className="text-20 fw-400">/3</span>
+          <span className="text-40 fw-600">4</span>
+          <span className="text-20 fw-400">/4</span>
         </div>
 
         <div className="row x-gap-20 y-gap-20 pt-10">
@@ -61,32 +61,22 @@ const InventoryandShipping = () => {
           </div>
           {/* End col-12 */}
           <h6 className="text-20 fw-500 mt-10 mb-22">
-            Options for Colors and Sizes
+            Options for Sizes
           </h6>
           <div
             className="mt-10  price"
             style={{ gap: "20px", display: "flex" }}
           >
+          
             <div className="dropdown col-md-6 js-dropdown js-price-1-active">
               <select className="form-select dropdown__button d-flex items-center rounded-4 border-light px-15 h-50 text-14">
                 <option value="1" defaultValue>
-                  Pink
+                  2GB
                 </option>
-                <option value="2">Blue</option>
-                <option value="3">Orange</option>
-                <option value="4">Green</option>
-                <option value="5">Yellow</option>
-              </select>
-            </div>
-            <div className="dropdown col-md-6 js-dropdown js-price-1-active">
-              <select className="form-select dropdown__button d-flex items-center rounded-4 border-light px-15 h-50 text-14">
-                <option value="1" defaultValue>
-                  S
-                </option>
-                <option value="2">M</option>
-                <option value="3">XL</option>
-                <option value="4">XXl</option>
-                <option value="5">XS</option>
+                <option value="2">4GB</option>
+                <option value="3">128GB</option>
+                <option value="4">256GB</option>
+               
               </select>
             </div>
           </div>
@@ -113,7 +103,7 @@ const InventoryandShipping = () => {
             </h2>
             <div
               className="mt-10 price"
-              style={{ gap: "20px", display: "flex" }}
+              style={{ gap: "10px", display: "flex" }}
             >
               <div className="col-md-4">
                 <h2 className="text-16 fw-500">Length&nbsp;(in.)</h2>
@@ -139,7 +129,7 @@ const InventoryandShipping = () => {
               </div>
             </div>
           </div>
-          <h2 className="text-16 fw-500">What method would you like to use to calculate the shipping fee?</h2>
+          <h2 className="text-18 fw-500">Estimated Delivery Timeframes</h2>
           {options.map((option, index) => (
             <div className="row y-gap-10 items-center justify-between" key={index}>
               <div className="col-auto">
