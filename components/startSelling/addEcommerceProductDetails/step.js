@@ -31,18 +31,7 @@ const Index = () => {
       ),
       content: <Pricing/>,
     },
-    {
-      title: "Category Details",
-      stepNo: "3",
-      stepBar: (
-        <>
-          <div className="col d-none d-sm-block">
-            <div className="w-full h-1 bg-border"></div>
-          </div>
-        </>
-      ),
-      content: <CategoryDetails/>,
-    },
+    
     
     {
       title: "Inventory and Shipping",

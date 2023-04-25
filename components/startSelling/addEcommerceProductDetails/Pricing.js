@@ -1,11 +1,24 @@
 import { useState } from "react";
-
 import { Checkbox } from "@nextui-org/react";
+import Dropdown from "../../common/Dropdown";
 
 const Pricing = () => {
   const [selected, setSelected] = useState(false);
   const [subscriptionselect, subscriptionsetSelected] = useState(false);
+  const [subscriptionoption, setsubscriptionoption] = useState("Subscription");
 
+  const handleSubscriptionvalueChange = (value) => {
+    setsubscriptionoption(value);
+  };
+
+  const dropdowns = [
+    {
+      title: "Subsciption Options",
+      value:subscriptionoption,
+      options: ["Weekly", "Monthly", "Quaterly","Yearly"],
+      onChange: handleSubscriptionvalueChange,
+    },
+  ];
   return (
     <>
       <div className="col-xl-8 col-lg-8 mt-30">
@@ -49,16 +62,12 @@ const Pricing = () => {
           <h2 className="text-20 fw-500 mt-10 mb-30">Subscription</h2>
           <div className="col-md-12">
             <h2 className="text-18 fw-500 mb-20">Select Subscription Plans</h2>
-            <div className="dropdown col-md-6 js-dropdown js-price-1-active">
-              <select className="form-select dropdown__button d-flex items-center rounded-4 border-light px-15 h-50 text-14">
-                <option value="1" defaultValue>
-                  Monthly
-                </option>
-                <option value="2">Weekly</option>
-                <option value="3">Quarterly</option>
-                <option value="4">Yearly</option>
-                <option value="5">Anually</option>
-              </select>
+            <div className="mt-30 mb-40">
+            {dropdowns.map((dropdown, index) => (
+              <div key={index} className="col-lg-3 col-md-6">
+                <Dropdown key={index} {...dropdown} />
+              </div>
+            ))}
             </div>
           </div>
 
