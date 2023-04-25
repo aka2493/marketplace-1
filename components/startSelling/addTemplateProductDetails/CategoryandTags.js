@@ -1,6 +1,5 @@
 import {useState} from 'react';
 import Image from "next/image"
-import MultiSelect from './MultiSelect';
 import InputWithSuggestionsAndTags from "./../../common/InputWithSuggestionsAndTags"
 
 
@@ -51,7 +50,7 @@ const CategoryandTags= () => {
                   <h2 className="text-16 fw-600 mt-10 mb-20">Type of user (Optional)</h2>
                   <div className="form-input">
                     <input type="text" required />
-                    <label className="lh-1 text-16 text-light-1">Phone Number</label>
+                    <label className="lh-1 text-16 text-light-1">user</label>
                   </div>
                 </div>
                 {/* End col-12 */}
@@ -61,7 +60,7 @@ const CategoryandTags= () => {
                 <div className="form-input ">
                   <input type="text" required />
                   <label className="lh-1 text-16 text-light-1">
-                    ZIP code/Postal code
+                   url
                   </label>
                 </div>
               </div>
@@ -73,7 +72,7 @@ const CategoryandTags= () => {
                   
                   <div className="form-input ">
                     <input type="text" required />
-                    <label className="lh-1 text-16 text-light-1">Phone Number</label>
+                    <label className="lh-1 text-16 text-light-1">Username</label>
                   </div>
                 </div>
                 {/* End col-12 */}
@@ -83,7 +82,7 @@ const CategoryandTags= () => {
                 <div className="form-input ">
                   <input type="text" required />
                   <label className="lh-1 text-16 text-light-1">
-                    ZIP code/Postal code
+                   Password
                   </label>
                 </div>
               </div>

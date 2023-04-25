@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import Pitch from "./Pitch";
-import CatgeoryandTags from "./CategoryandTags";
-import PriceandComments from "./PriceandComments";
-import Files from "./Files"
+import ProductDetails from "./ProductDetails";
+import InventoryandShipping from "./InventoryandShipping";
+import CategoryDetails from "./CategoryDetails"
+import Pricing from "./Pricing"
 
 const Index = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const steps = [
     {
-      title: "Pitch and Sales",
+      title: "Product Details",
       stepNo: "1",
       stepBar: (
         <>
@@ -17,10 +17,10 @@ const Index = () => {
           </div>
         </>
       ),
-      content: <Pitch />,
+      content: <ProductDetails />,
     },
     {
-      title: "Files",
+      title: "Pricing",
       stepNo: "2",
       stepBar: (
         <>
@@ -29,10 +29,10 @@ const Index = () => {
           </div>
         </>
       ),
-      content: <Files/>,
+      content: <Pricing/>,
     },
     {
-      title: "Category and Tags",
+      title: "Category Details",
       stepNo: "3",
       stepBar: (
         <>
@@ -41,13 +41,14 @@ const Index = () => {
           </div>
         </>
       ),
-      content: <CatgeoryandTags/>,
+      content: <CategoryDetails/>,
     },
+    
     {
-      title: "Price and Comments",
-      stepNo: "4",
+      title: "Inventory and Shipping",
+      stepNo: "3",
       stepBar: "",
-      content: <PriceandComments />,
+      content: <InventoryandShipping/>,
     },
   ];
 
@@ -123,6 +124,7 @@ const Index = () => {
           </button>
         </div>
         {/* End prvious btn */}
+
         {isLastStep  ?(
           <div className="col-auto">
           <button

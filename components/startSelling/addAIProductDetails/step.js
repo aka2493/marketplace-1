@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import Pitch from "./Pitch";
-import CatgeoryandTags from "./CategoryandTags";
-import PriceandComments from "./PriceandComments";
-import Files from "./Files"
+import Pricing from "./Pricing";
+import ScoreandEfficiency from "./ScoreandEfficiency";
+import Demo from "./Demo"
 
-const Index = () => {
+
+const Index = ({typevalue}) => {
   const [currentStep, setCurrentStep] = useState(0);
-  const steps = [
+
+  var steps = [
     {
-      title: "Pitch and Sales",
+      title: "The Pitch",
       stepNo: "1",
       stepBar: (
         <>
@@ -17,10 +19,10 @@ const Index = () => {
           </div>
         </>
       ),
-      content: <Pitch />,
+      content: <Pitch typevalue={typevalue} />,
     },
     {
-      title: "Files",
+      title: "Pricing",
       stepNo: "2",
       stepBar: (
         <>
@@ -29,10 +31,10 @@ const Index = () => {
           </div>
         </>
       ),
-      content: <Files/>,
+      content: <Pricing typevalue={typevalue}/>,
     },
     {
-      title: "Category and Tags",
+      title: "Score and Efficiency",
       stepNo: "3",
       stepBar: (
         <>
@@ -40,20 +42,28 @@ const Index = () => {
             <div className="w-full h-1 bg-border"></div>
           </div>
         </>
-      ),
-      content: <CatgeoryandTags/>,
+      ), 
+      content:  <ScoreandEfficiency/>,
+      
     },
     {
-      title: "Price and Comments",
-      stepNo: "4",
+      title: "Demo",
+      stepNo:typevalue !== "AI models" ? "3" : "4",
       stepBar: "",
-      content: <PriceandComments />,
+      content: <Demo typevalue={typevalue}/>,
     },
+    
   ];
 
+  if (typevalue !== "AI models") {
+    steps = steps.filter((step, index) => index !== 2);
+    
+  }
+
   const renderStep = () => {
-    const { content } = steps[currentStep];
-    return <>{content}</>;
+   const { content } = steps[currentStep];
+      return <>{content}</>;
+
   };
 
   const nextStep = () => {
@@ -61,6 +71,7 @@ const Index = () => {
       setCurrentStep(currentStep + 1);
       window.scrollTo(0, 0);
     }
+ 
   };
 
   const previousStep = () => {
@@ -70,7 +81,6 @@ const Index = () => {
     }
   };
   const isLastStep = currentStep === steps.length - 1;
-
   return (
     <>
       <div className="row x-gap-20 y-gap-30 items-center">
@@ -98,8 +108,7 @@ const Index = () => {
                     </>
                   )}
                 </div>
-
-                <div className={ currentStep === index ?"text-20 text-blue-1 fw-600 ml-10":"text-20 fw-100 ml-10"}> {step.title}</div>
+<div className={ currentStep === index ?"text-20 text-blue-1 fw-600 ml-10":"text-20 fw-100 ml-10"}> {step.title}</div>
               </div>
             </div>
             {/* End .col */}
@@ -123,27 +132,27 @@ const Index = () => {
           </button>
         </div>
         {/* End prvious btn */}
-        {isLastStep  ?(
-          <div className="col-auto">
+       {isLastStep  ?(
+        <div className="col-auto">
+        <button
+          className="button h-60 px-24 -dark-1 bg-blue-1 text-white"
+   
+        >
+          Submit<div className="icon-arrow-top-right ml-15" />
+        </button>
+        </div>
+        ):(
+        <div className="col-auto">
           <button
             className="button h-60 px-24 -dark-1 bg-blue-1 text-white"
-     
+          
+            onClick={nextStep}
           >
-            Submit<div className="icon-arrow-top-right ml-15" />
+            Next <div className="icon-arrow-top-right ml-15" />
           </button>
-          </div>
-          ):(
-          <div className="col-auto">
-            <button
-              className="button h-60 px-24 -dark-1 bg-blue-1 text-white"
-             
-              onClick={nextStep}
-            >
-              Next <div className="icon-arrow-top-right ml-15" />
-            </button>
-  
-          </div>
-          )} 
+
+        </div>
+        )}       
         {/* End next btn */}
       </div>
       {/* End stepper button */}

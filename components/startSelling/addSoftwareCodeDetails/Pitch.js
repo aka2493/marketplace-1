@@ -1,5 +1,4 @@
-import Link from "next/link";
-//import BookingDetails from "./sidebar/BookingDetails";
+
 
 const PitchandSales= () => {
   
@@ -7,7 +6,7 @@ const PitchandSales= () => {
     <>
       <div className="col-xl-8 col-lg-8 mt-30">
         <div className="py-15 px-20 rounded-4 mt-30 text-15 bg-green-1">
-        Describe Product and get in front of buyers looking for similar domains by categorizing and mentioniing the age
+        Describe Product and get in front of buyers looking for similar softwares/code by categorizing and mentioniing the age
           
         </div>
         {/* End register notify */}
@@ -15,10 +14,6 @@ const PitchandSales= () => {
         <span className="text-40 fw-600">1</span>
         <span className="text-20 fw-400">/4</span>
     </div>
-        <h2 className="text-26 fw-500 mt-40 md:mt-24">
-    The Pitch
-        </h2>
-       
         <div className="row x-gap-20 y-gap-20 pt-20">
        
    
@@ -26,8 +21,6 @@ const PitchandSales= () => {
     
           <h6 className="text-18 fw-500 mt-10 mb-22">Enter your Software Name
           </h6>
-           <h6 className="text-15 fw-normal text-light-1 ml-10 mt-10 mb-22">(ex.Canvas | The Multipurpose HTML5 Template)</h6> 
-          
            </div> 
            <div className="form-input">
            <input type="text" required />
@@ -37,10 +30,7 @@ const PitchandSales= () => {
          </div>
             
           {/* End col-12 */}
-
-          
-
-          <div className="col-md-12">
+<div className="col-md-12">
           <h2 className="text-18 fw-500 mt-10 mb-24">Enter key features</h2>
             <div className="form-input">
               <textarea required rows={5} defaultValue={""} />
@@ -51,7 +41,6 @@ const PitchandSales= () => {
           </div>
           {/* End col-12 */} 
           
-      
           <div className="col-md-12">
           <h2 className="text-18 fw-500 mt-10 mb-24">Enter HTML Description</h2>
             <div className="form-input">
@@ -61,9 +50,7 @@ const PitchandSales= () => {
               </label>
             </div>
           </div>
-        
-      
-         
+          
         </div>
         {/* End .row */}
       </div>

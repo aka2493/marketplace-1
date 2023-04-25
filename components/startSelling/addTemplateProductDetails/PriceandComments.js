@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image"
 import {useState } from "react";
 import { Switch } from "@nextui-org/react";
-import { Checkbox, Spacer } from "@nextui-org/react";
+import { Checkbox } from "@nextui-org/react";
 
 const PriceandComments= () => {
     const [selected, setSelected] = useState(false);

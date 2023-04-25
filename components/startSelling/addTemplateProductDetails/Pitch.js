@@ -1,5 +1,4 @@
-import Link from "next/link";
-//import BookingDetails from "./sidebar/BookingDetails";
+
 
 const PitchandSales= () => {
   
@@ -18,9 +17,7 @@ const PitchandSales= () => {
         
        
         <div className="row x-gap-20 y-gap-20 pt-10">
-       
-   
-          <div className="col-md-12 d-flex align-items-center">
+       <div className="col-md-12 d-flex align-items-center">
      
           <h6 className="text-18 fw-500 mt-10 mb-22">Enter your Template Name
           </h6>
