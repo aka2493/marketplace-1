@@ -3,7 +3,7 @@ import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import Listings from "./listings";
 import Services from "./services"
 
-const sellerInfoTabs = () => {
+const SellerInfoTabs = () => {
     const [tabIndex, setTabIndex] = useState(0);
 
     return (
@@ -46,4 +46,4 @@ Our Work/Portfolio
     </Tabs>
   );
 };
-export default sellerInfoTabs;
+export default SellerInfoTabs;
