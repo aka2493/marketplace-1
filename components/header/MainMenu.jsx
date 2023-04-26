@@ -17,7 +17,9 @@ const MainMenu = ({ style = "" }) => {
     <nav className="menu js-navList">
       <ul className={`menu__nav ${style} -is-active`}>
 
-
+      <li className={router.pathname === "/AI-Marketplace/AI-listing" ? "current" : ""}>
+      <Link href="/AI-Marketplace/AI-listing">AI Marketplace</Link>
+    </li>
       <li className={router.pathname === "/domains/domain-listing" ? "current" : ""}>
           <Link href="/domains/domain-listing">Domains</Link>
         </li>
@@ -28,6 +30,7 @@ const MainMenu = ({ style = "" }) => {
         <li className={router.pathname === "/domains/domain-listing" ? "current" : ""}>
           <Link href="/domains/domain-listing">Software Code</Link>
         </li>
+
         <li className={router.pathname === "/CloudDashboard/db-servers" ? "current" : ""}>
           <Link href="/CloudDashboard/db-servers">Cloud Dashboard</Link>
         </li>
