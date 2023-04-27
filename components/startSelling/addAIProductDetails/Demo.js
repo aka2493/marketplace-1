@@ -4,13 +4,13 @@ import { Checkbox} from "@nextui-org/react";
 
 const Demo= ({typevalue}) => {
   const [users, setUsers] = useState([{type: '', url: '', username: '', password: ''}]);
-  const [selected, setSelected] = useState(-1);
+  const [selected, setSelected] = useState(null);
 
   const options =["Demo Account","Free Trial Account"]
 
-const handleCheckboxChange = (index) => {
-  setSelected(index === selected ? -1 : index);
-};
+  const handleOptionChange = (event) => {
+    setSelected(event.target.value);
+  };
  
   const addUser = () => {
     if (users.length < 4) { // limit to a maximum of 2 extra users
@@ -46,16 +46,27 @@ const handleCheckboxChange = (index) => {
         {typevalue !== "AI models" ? <span className="text-20 fw-400">/3</span> : <span className="text-20 fw-400">/4</span>} 
     </div>
    
-{options.map((option, index) => (
-  <div className ="mt-20" key={index}>
-    <Checkbox isSelected={selected === index} color="success" onChange={() => handleCheckboxChange(index)}>
-      <label className="text-16 fw-500 text-blue-1">{option}</label>
-    </Checkbox>
- 
-  </div>
-))}
+    {options.map((option, index) => (
+      <div className="mt-20" key={index}>
+        <div className="form-radio">
+          <div className="radio d-flex items-center">
+            <input
+              type="radio"
+              name="demoAccount"
+              value={option}
+              checked={selected === option}
+              onChange={handleOptionChange}
+            />
+            <div className="radio__mark">
+              <div className="radio__icon" />
+            </div>
+            <div className="ml-10">{option}</div>
+          </div>
+        </div>
+      </div>
+    ))}
 
-{selected === 0 && (
+{selected === 'Demo Account'  && (
          <div className="mt-40">
           <div className="col-md-8">
           <span>
@@ -137,17 +148,14 @@ const handleCheckboxChange = (index) => {
             )}
           </div>
           </div> ))}</div>)}
-{selected === 1 && (
-  <div className="col-md-6 mt-40">
-  <h6 className="text-18 fw-500 mb-20">Enter URL</h6>        
-  <div className="form-input ">
-    <input type="text"   />
-   
-  </div>
-</div>
-
-)}
-                   
+          {selected === 'Free Trial Account' && (
+            <div className="col-md-6 mt-40">
+              <h6 className="text-18 fw-500 mb-20">Enter URL</h6>
+              <div className="form-input ">
+                <input type="text" />
+              </div>
+            </div>
+          )}             
 
 
       {/* End .col-xl-7 */}

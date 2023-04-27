@@ -93,3 +93,16 @@
   .suggestion-list li:hover {
     background-color: #f2f2f2;
   }
+
+  .services {
+    display: flex;
+    height: 410px; /* set a fixed height for the parent div */
+  }
+  
+  .w-360 {
+    flex: 1; /* set the child divs to take up equal space */
+  }
+  
+  .w-360 > div {
+    height: 100%; /* make the child divs fill the height of the parent div */
+  }

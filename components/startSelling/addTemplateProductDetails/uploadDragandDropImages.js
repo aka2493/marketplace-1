@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useDropzone } from "react-dropzone";
 
-const  UploadDragandDropImages = () =>{
+const  UploadDragandDropImages = ({selectedOption}) =>{
 
 const [fileNames, setFileNames] = useState([]);
 const [filesPerColumn, setFilesPerColumn] = useState(5);
@@ -50,9 +50,12 @@ useEffect(() => {
                   alt="image"
                   
                 />
-                    <h6 className="text-15 mt-20 fw-normal">
-                    Drag and Drop Screenshots here or <Link href="" className="text-blue-1 fw-500">Browse</Link> your files
-                  </h6>
+                   
+                  {selectedOption ? (<h6 className="text-15 mt-20 fw-normal">
+                  Drag and Drop Product here or <Link href="" className="text-blue-1 fw-500">Browse</Link> 
+                </h6>) :(<h6 className="text-15 mt-20 fw-normal">
+                Drag and Drop Screenshots here or <Link href="" className="text-blue-1 fw-500">Browse</Link> your files
+              </h6>)}
                   </div>
                 )}
               </div>

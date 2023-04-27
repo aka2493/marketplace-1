@@ -1,12 +1,17 @@
 import Image from "next/image";
+import { useState } from "react";
+import UploadDragandDropImages from "./../addTemplateProductDetails/uploadDragandDropImages";
+import { Checkbox } from "@nextui-org/react";
 
 const InventoryandShipping = () => {
+  const [selected, setSelected] = useState(false);
+
   const options = [
-    { label: "Instant Delivery (within few minutes)"  },
-    { label: "Same Day Delivery (within few hours)"},
-    { label: "Standard Delivery (0-15 days) "}, 
+    { label: "Instant Delivery (within few minutes)" },
+    { label: "Same Day Delivery (within few hours)" },
+    { label: "Standard Delivery (0-15 days) " },
   ];
-  
+
   return (
     <>
       <div className="col-xl-8 col-lg-8 mt-30">
@@ -60,78 +65,64 @@ const InventoryandShipping = () => {
             </div>
           </div>
           {/* End col-12 */}
-          <h6 className="text-20 fw-500 mt-10 mb-22">
-            Options for Sizes
-          </h6>
-          <div
-            className="mt-10  price"
-            style={{ gap: "20px", display: "flex" }}
-          >
-          
-            <div className="dropdown col-md-6 js-dropdown js-price-1-active">
-              <select className="form-select dropdown__button d-flex items-center rounded-4 border-light px-15 h-50 text-14">
-                <option value="1" defaultValue>
-                  2GB
-                </option>
-                <option value="2">4GB</option>
-                <option value="3">128GB</option>
-                <option value="4">256GB</option>
-               
-              </select>
-            </div>
-          </div>
+
           <div className="pt-10 mt-30 border-top-light" />
           {/* border separation */}
-          <h6 className="text-20  fw-500">Shipping</h6>
-          <h6 className="text-18 fw-500">
-            Weight and Dimensions of the Product
+          <h6 className="text-20  fw-500">Delivery</h6>
+          <h6 className="text-18 fw-500 mb-10">
+            How will you deliver this product?
           </h6>
-          <div className="border mt-20 mb-20" style={{ padding: "36px" }}>
-            <div className="row">
-              <div className="col-md-4">
-                <h2 className="text-16 fw-600 mt-10 mb-20">
-                  Weight&nbsp;(in Lbs)
-                </h2>
-                <div className="form-input">
-                  <input type="text" required />
-                </div>
+
+          <div className="row y-gap-10 items-center justify-between">
+            <div className="col-auto">
+              <div>
+                <Checkbox color="success"
+                isSelected={selected}
+                onChange={setSelected}>
+                  <label className="text-16">
+                    Instant Delivery&nbsp;(size up to 25Mb)
+                  </label>
+                </Checkbox>
               </div>
-              {/* End col-12 */}
             </div>
-            <h2 className="text-16 fw-600 justify-center text-center align-content-center mt-20 mb-20">
-              Dimensions
-            </h2>
-            <div
-              className="mt-10 price"
-              style={{ gap: "10px", display: "flex" }}
-            >
-              <div className="col-md-4">
-                <h2 className="text-16 fw-500">Length&nbsp;(in.)</h2>
-                <div className="form-input mt-10">
-                  <input type="text" required />
-                </div>
-              </div>
+            {/* End .col */}
+          </div>
+          {selected && <UploadDragandDropImages selected={selected}/>}
 
-              {/* End col-12 */}
-
-              <div className="col-md-4">
-                <h2 className="text-16 fw-500">Width&nbsp;(in.)</h2>
-                <div className="form-input mt-10">
-                  <input type="text" required />
-                </div>
+          <div className="row y-gap-10 items-center justify-between">
+            <div className="col-auto">
+              <div >
+                <Checkbox color="success">
+                  <label className="text-16">
+                    Via Cloud like Cloud Drive,Drop
+                    Box&nbsp;(sizes&nbsp;&gt;&nbsp;24Mb)
+                  </label>
+                </Checkbox>
               </div>
+            </div>
+            {/* End .col */}
+          </div>
 
-              <div className="col-md-4">
-                <h2 className="text-16 fw-500">Height&nbsp;(in.)</h2>
-                <div className="form-input mt-10">
-                  <input type="text" required />
-                </div>
-              </div>
+          <div className="row y-gap-10 items-center justify-between">
+          <div className="col-auto">
+            <div>
+              <Checkbox color="success">
+                <label className="text-16">
+                Email or Messaging Service
+                </label>
+              </Checkbox>
             </div>
           </div>
-          <h2 className="text-18 fw-500">Estimated Delivery Timeframes</h2>
+          {/* End .col */}
+        </div>
+          <h2 className="text-18 mt-20 fw-500">
+            Estimated Delivery Timeframes
+          </h2>
           {options.map((option, index) => (
-            <div className="row y-gap-10 items-center justify-between" key={index}>
+            <div
+              className="row y-gap-10 items-center justify-between"
+              key={index}
+            >
               <div className="col-auto">
                 <div className="form-radio">
                   <div className="radio d-flex items-center">
@@ -144,11 +135,8 @@ const InventoryandShipping = () => {
                 </div>
               </div>
               {/* End .col */}
-    
             </div>
           ))}
-
-
         </div>
         {/* End .row */}
       </div>

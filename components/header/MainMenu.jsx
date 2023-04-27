@@ -18,7 +18,11 @@ const MainMenu = ({ style = "" }) => {
       <ul className={`menu__nav ${style} -is-active`}>
 
 
-        <li className={router.pathname === "/domains/domain-listing" ? "current" : ""}>
+      <li className={router.pathname === "/AI-Marketplace/AI-listing" ? "current" : ""}>
+      <Link href="/AI-Marketplace/AI-listing">AI Marketplace</Link>
+    </li>
+      <li className={router.pathname === "/domains/domain-listing" ? "current" : ""}>
+
           <Link href="/domains/domain-listing">Domains</Link>
         </li>
         <li className={router.pathname === "/templates/template-listing" ? "current" : ""}>
@@ -28,6 +32,7 @@ const MainMenu = ({ style = "" }) => {
         <li className={router.pathname === "/software-code/software-listing" ? "current" : ""}>
           <Link href="/software-code/software-listing">Software Code</Link>
         </li>
+
         <li className={router.pathname === "/CloudDashboard/db-servers" ? "current" : ""}>
           <Link href="/CloudDashboard/db-servers">Cloud Dashboard</Link>
         </li>
