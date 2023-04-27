@@ -46,7 +46,7 @@ const SubscriptionFilter = () => {
         </div>
       </div>
       {selected &&   <div>{options.map((option, index) => (
-        <div className="row y-gap-10 ml-10 items-center justify-between">
+        <div key ={index} className="row y-gap-10 ml-10 items-center justify-between">
         <div className="col-auto">
           <div className="form-checkbox d-flex items-center">
             <input type="checkbox"/>
