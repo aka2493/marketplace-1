@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import Image from "next/image";
 import Link from "next/link";
+import isTextMatched from "../../utils/isTextMatched";
 
 const AIProperties = () => {
   return (
@@ -41,6 +42,28 @@ const AIProperties = () => {
                                   <i className="icon-heart text-12"></i>
                                 </button>
                               </div>
+                              
+                <div className="cardImage__leftBadge" style={{width:"63%"}}>
+                <div
+                  className={`py-5 px-15 rounded-right-4 text-12 lh-16 fw-500 uppercase ${isTextMatched(item?.tag, "Editor choice")
+                      ? "bg-dark-1 text-white"
+                      : ""
+                    } ${isTextMatched(item?.tag, "Subscription Only")
+                      ? "bg-stebr-pink text-white"
+                      : ""
+                    } 
+                  } ${isTextMatched(item?.tag, "One Time Purchase")
+                      ? "bg-brown-1 text-white"
+                      : ""
+                    } 
+                   ${isTextMatched(item?.tag, "premium")
+                      ? "bg-yellow-1 text-dark-1"
+                      : ""
+                    }`}
+                >
+                  {item?.tag}
+                </div>
+              </div>
                             </div>
                           </SwiperSlide>
                         ))}
