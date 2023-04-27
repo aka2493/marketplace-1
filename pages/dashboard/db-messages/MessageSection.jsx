@@ -61,7 +61,7 @@ const MessagingSupport = () => {
                         <p className="time text-10 text-light-1 lh-14">14:58</p>
                         <div className="message text-only">
                             <div className="response">
-                                <p className="text text-light-1 lh-16 text-14">Hey Megan ! It's been a while</p>
+                                <p className="text text-light-1 lh-16 text-14">Hey Megan ! It is been a while</p>
                             </div>
                         </div>
                         <div className="message text-only">
@@ -76,7 +76,7 @@ const MessagingSupport = () => {
                         <p className="time text-10 text-light-1 lh-14">15:09</p>
                         <div className="message text-only">
                             <div className="response">
-                                <p className="text text-light-1 lh-16 text-14">Hey Megan ! It's been a while</p>
+                                <p className="text text-light-1 lh-16 text-14">Hey Megan ! It is been a while</p>
                             </div>
                         </div>
                         <div className="message text-only">
