@@ -1,8 +1,7 @@
 .mainSearch {
   position: relative;
   z-index: 2;
-  width: 60%;
-  margin: auto;
+  width:80%;
 
   @include media-below(lg) {
     width: 100%;
