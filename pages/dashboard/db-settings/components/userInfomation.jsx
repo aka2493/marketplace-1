@@ -1,6 +1,6 @@
-import AvatarUploader from "./AvatarUploader";
+import AvatarUploader from "./avatarUploader";
 
-const LocationInfo = () => {
+const UserInformationTab = () => {
   return (
     <form className="col-xl-9">
       <div className="row x-gap-20 y-gap-20">
@@ -148,4 +148,4 @@ const LocationInfo = () => {
   );
 };
 
-export default LocationInfo;
+export default UserInformationTab;
