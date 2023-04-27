@@ -53,38 +53,38 @@ const MessagingSupport = () => {
                     </div>
                     <div className="messages-chat">
                         <div className="message">
-                            <p className="text text-dark-1 lh-16 text-14"> Hi, how are you ? </p>
+                            <p className="text text-dark-1 lh-16 text-14">Hi, how are you ? </p>
                         </div>
                         <div className="message">
-                            <p className="text text-dark-1 lh-16 text-14"> What are you doing tonight ? Want to go take a drink ?</p>
+                            <p className="text text-dark-1 lh-16 text-14">What are you doing tonight ? Want to go take a drink ?</p>
                         </div>
-                        <p className="time text-10 text-light-1 lh-14"> 14:58</p>
+                        <p className="time text-10 text-light-1 lh-14">14:58</p>
                         <div className="message text-only">
                             <div className="response">
-                                <p className="text text-light-1 lh-16 text-14"> Hey Megan ! It's been a while</p>
+                                <p className="text text-light-1 lh-16 text-14">Hey Megan ! It's been a while</p>
                             </div>
                         </div>
                         <div className="message text-only">
                             <div className="response">
-                                <p className="text text-light-1 lh-16 text-14"> When can we meet ?</p>
+                                <p className="text text-light-1 lh-16 text-14">When can we meet ?</p>
                             </div>
                         </div>
-                        <p className="response-time time text-10 text-light-1 lh-14"> 15:04</p>
+                        <p className="response-time time text-10 text-light-1 lh-14">15:04</p>
                         <div className="message">
-                            <p className="text text-dark-1 lh-16 text-14"> 9 pm at the bar if possible</p>
+                            <p className="text text-dark-1 lh-16 text-14">9 pm at the bar if possible</p>
                         </div>
-                        <p className="time text-10 text-light-1 lh-14"> 15:09</p>
+                        <p className="time text-10 text-light-1 lh-14">15:09</p>
                         <div className="message text-only">
                             <div className="response">
-                                <p className="text text-light-1 lh-16 text-14"> Hey Megan ! It's been a while</p>
+                                <p className="text text-light-1 lh-16 text-14">Hey Megan ! It's been a while</p>
                             </div>
                         </div>
                         <div className="message text-only">
                             <div className="response">
-                                <p className="text text-light-1 lh-16 text-14"> When can we meet ?</p>
+                                <p className="text text-light-1 lh-16 text-14">When can we meet ?</p>
                             </div>
                         </div>
-                        <p className="response-time time text-10 text-light-1 lh-14"> 15:04</p>
+                        <p className="response-time time text-10 text-light-1 lh-14">15:04</p>
                     </div>
                     <div className="footer-chat">
                         <input type="text" className="write-message" placeholder="Type your message here"></input>
