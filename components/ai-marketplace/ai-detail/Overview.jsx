@@ -9,7 +9,7 @@ const Overview = () => {
             Jasper AI is an AI-powered virtual assistant developed by Cisco. It
             is designed to provide businesses with a conversational AI interface
             that can help customers with common queries and tasks. Jasper AI is
-            built on Cisco's Conversational AI platform, which uses natural
+            built on Cisco&apos;s Conversational AI platform, which uses natural
             language processing (NLP) and machine learning (ML) techniques to
             understand and respond to user queries. Jasper AI can be integrated
             into a variety of channels, such as chatbots, voice assistants, and

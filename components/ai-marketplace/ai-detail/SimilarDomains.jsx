@@ -9,7 +9,7 @@ const SimilarDomains = ({}) => {
           <div className="col-12">
             <ul className="list-disc text-15 mt-20">
               <li>Generate months of social media content in minutes</li>
-              <li>Generate fresh ad creative that's designed to convert.</li>
+              <li>Generate fresh ad creative that&apos;s designed to convert.</li>
               <li>Write SEO-Optimized blog posts 10X faster with Jasper</li>
               <li>
                 {" "}
