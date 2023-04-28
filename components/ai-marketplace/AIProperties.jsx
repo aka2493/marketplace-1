@@ -176,7 +176,7 @@ const AIProperties = () => {
                 </div>
                 <div className="text-14 text-light-1 mt-5">{item?.subscription}</div>
                 <Link
-                  href={`/car/car-single/${item.id}`}
+                  href={`/AI-Marketplace/AI-detail/`}
                   className="button h-50 px-24 bg-dark-1 -yellow-1 text-white mt-70"
                 >
                   View Detail <div className="icon-arrow-top-right ml-15" />
