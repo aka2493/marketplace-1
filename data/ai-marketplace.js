@@ -3,6 +3,7 @@ module.exports = [
     id: 1,
     slideImg: ["/img/ai-marketplace/jasper.png"],
     title: "Mercedes-Benz E-Class",
+    tag:"Subscription Only",
     author: "Authors",
     feature: "Content and Marketing",
     subscription:"Monthly",
@@ -15,6 +16,7 @@ module.exports = [
   {
     id: 2,
     author: "Authors",
+    tag:"One Time Purchase",
     feature: "Content and Marketing",
     subscription:"Yearly",
     description:
@@ -34,6 +36,8 @@ module.exports = [
   {
     id: 3,
     author: "Authors",
+    tag:"Subscription Only",
+
     feature: "Content and Marketing",
     subscription:"Monthly",
     description:
@@ -49,7 +53,8 @@ module.exports = [
   {
     id: 4,
     author: "Authors",
-    feature: "Content and Marketing",
+    tag:"One Time Purchase",
+feature: "Content and Marketing",
     subscription:"Yearly",
     description:
       "Jasper is the generative AI platform for business that helps your team create content tailored for your brand 10X faster, wherever you work online",
@@ -64,6 +69,8 @@ module.exports = [
   {
     id: 5,
     author: "Authors",
+    tag:"Subscription Only",
+
     feature: "Content and Marketing",
     subscription:"Monthly",
     description:
