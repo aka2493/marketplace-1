@@ -18,12 +18,12 @@ const Sidebar = () => {
         </div>
       </div>
       <div className="sidebar__item">
-      <h5 className="text-18 fw-500 mb-10">Types of AI Apps</h5>
-      <div className="sidebar-checkbox">
-        <AIFilters />
+        <h5 className="text-18 fw-500 mb-10">Types of AI Apps</h5>
+        <div className="sidebar-checkbox">
+          <AIFilters />
+        </div>
+        {/* End Sidebar-checkbox */}
       </div>
-      {/* End Sidebar-checkbox */}
-    </div>
       <div className="sidebar__item pb-30">
         <h5 className="text-18 fw-500 mb-10">Price</h5>
         <div className="row x-gap-10 y-gap-30">
@@ -33,12 +33,7 @@ const Sidebar = () => {
         </div>
       </div>
       {/* End Price filter */}
-      <div className="sidebar__item">
-      <h5 className="text-18 fw-500 mb-10">Star Rating</h5>
-      <div className="row x-gap-10 y-gap-10 pt-10">
-        <RatingsFilter />
-      </div>
-    </div> 
+
       <div className="sidebar__item">
         <h5 className="text-18 fw-500 mb-10">Pricing Plans</h5>
         <div className="sidebar-checkbox">
@@ -46,12 +41,12 @@ const Sidebar = () => {
         </div>
         {/* End Sidebar-checkbox */}
       </div>
-
-      
-      
-    
-     
-       
+      <div className="sidebar__item">
+        <h5 className="text-18 fw-500 mb-10">Star Rating</h5>
+        <div className="row x-gap-10 y-gap-10 pt-10">
+          <RatingsFilter />
+        </div>
+      </div>
     </>
   );
 };

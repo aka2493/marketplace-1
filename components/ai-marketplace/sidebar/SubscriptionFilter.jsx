@@ -14,7 +14,7 @@ const SubscriptionFilter = () => {
         <div className="col-auto">
           <div className="form-checkbox d-flex items-center">
             <input
-              type="checkbox"
+              type="checkbox"  
              
             />
             <div className="form-checkbox__mark">
