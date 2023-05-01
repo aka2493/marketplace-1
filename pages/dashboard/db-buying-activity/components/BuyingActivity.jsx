@@ -1,5 +1,5 @@
 import Pagination from "../../common/Pagination";
-import TabsSection from "../../../../components/template-detail/Tabs/tabPanel";
+import TabsSection from "../../../../components/common2/Tabs/tabPanel";
 import MyBidsTableComponent from "./MyBids.component";
 import MyOrdersTableComponent from "./MyOrders.component";
 import WatchlistDomainTabComponent from "./WatchList/Watchlist-domain.component";

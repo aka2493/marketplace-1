@@ -42,14 +42,6 @@ const DropdownSelectBar = () => {
 
   const [selectedValues, setSelectedValues] = useState([]);
 
-  const data = [
-    { label: "Central London", value: "central_london" },
-    { label: "Guests' favourite area", value: "favourite_area" },
-    { label: "Westminster Borough", value: "westminster_borough" },
-    { label: "Kensington and Chelsea", value: "kensington_and_chelsea" },
-    { label: "Oxford Street", value: "oxford_street" },
-  ];
-
   return (
     <>
 

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-import PaymentCards from "../../../../components/common2/paymentCard/cards";
-import PayPalPaymentCards from "../../../../components/common2/paymentCard/paypalCard";
-import BankAccountCard from "../../../../components/common2/paymentCard/bankAccountCard";
-import AddCard from "../../../../components/common2/paymentCard/AddCardModal";
+import PaymentCards from "../../../../components/common2/PaymentCard/paymentCards";
+import PayPalPaymentCards from "../../../../components/common2/PaymentCard/paypalCard";
+import BankAccountCard from "../../../../components/common2/PaymentCard/bankAccountCard";
+import AddCard from "../../../../components/common2/PaymentCard/addCardModal";
 
 const AccountCard = () => {
     const [showPaymentCard, setShowPaymentCard] = useState(false);

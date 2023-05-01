@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-import TabsSection from '../../template-detail/Tabs/tabPanel';
+import TabsSection from '../Tabs/tabPanel';
+import { PaymentCardAnimation, BankAccountAnimation } from '../../../utils/lotties';
 
-
-const BankAccountForm = () => {
+const CardForm = () => {
 
     const handleAccountSubmit = (event) => {
         event.preventDefault();
         // handle form submission logic here
     };
 
-    return (<><div className='text-center'>
-        <img src="/img/payment/card.jpg" alt="card_image" style={{ height: '250px' }} />
-    </div><form className="row y-gap-20 pt-20 pb-20" onSubmit={handleAccountSubmit}>
+    return (<>
+        <div className='animated_icon'>
+            <PaymentCardAnimation />
+        </div>
+        <form className="row y-gap-20 pt-20 pb-20" onSubmit={handleAccountSubmit}>
 
             <div className="col-12">
                 <div className="form-input">
@@ -30,7 +32,7 @@ const BankAccountForm = () => {
                     </label>
                 </div>
             </div>
-            <div className="col-12">
+            <div className="col-6">
                 <div className="form-input">
                     <input type="text" id="expiry" required />
                     <label htmlFor="expiry" className="lh-1 text-16 text-light-1">
@@ -38,7 +40,7 @@ const BankAccountForm = () => {
                     </label>
                 </div>
             </div>
-            <div className="col-12">
+            <div className="col-6">
                 <div className="form-input">
                     <input type="text" id="cvv" required />
                     <label htmlFor="cvv" className="lh-1 text-16 text-light-1">
@@ -55,9 +57,10 @@ const BankAccountForm = () => {
                     Verify Card
                 </button>
             </div>
-        </form></>)
+        </form>
+    </>)
 }
-const CardForm = () => {
+const BankAccountForm = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -65,13 +68,11 @@ const CardForm = () => {
     };
 
     return (
-
         <>
-            <div className='text-center'>
-                <img src="/img/payment/bank_account.jpg" alt="bank_image" style={{ height: '250px' }} />
+            <div className='animated_icon'>
+                <BankAccountAnimation />
             </div>
             <form className="row y-gap-20 pt-20 pb-20" onSubmit={handleSubmit}>
-
                 <div className="col-12">
                     <div className="form-input">
                         <input type="text" id="routingNumber" required />
@@ -117,7 +118,9 @@ const CardForm = () => {
                         Verify Account
                     </button>
                 </div>
-            </form></>
+            </form>
+        </>
+
     )
 }
 
@@ -134,8 +137,8 @@ const AddCard = ({ open, onClose = () => { } }) => {
                 <TabsSection tabLabels={[{ id: 1, label: 'Credit/Debit Card' },
                 { id: 2, label: 'Bank Account' },
                 ]}
-                    tabPanelComponents={[{ id: 1, component: <BankAccountForm handleSubmit={handleClose} /> },
-                    { id: 2, component: <CardForm handleSubmit={handleClose} /> },
+                    tabPanelComponents={[{ id: 1, component: <CardForm handleSubmit={handleClose} /> },
+                    { id: 2, component: <BankAccountForm handleSubmit={handleClose} /> },
                     ]} />
             </div>
         </Modal.Body>

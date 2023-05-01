@@ -1,4 +1,4 @@
-import TabsSection from "../../../../components/template-detail/Tabs/tabPanel";
+import TabsSection from "../../../../components/common2/Tabs/tabPanel";
 import PasswordSecurity from './passwordSecurity'
 import EmailNotification from './emailNotification'
 import UserInformationTab from './userInfomation'
