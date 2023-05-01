@@ -23,7 +23,7 @@ const index = () => {
 
         <div className="dashboard__main">
           <div className="dashboard__content bg-blue-2">
-            <div className="row y-gap-20 justify-between items-end pb-60 lg:pb-40 md:pb-32">
+            <div className="row y-gap-20 justify-between items-end pb-40 lg:pb-40 md:pb-32">
               <div className="col-12">
                 <h1 className="text-30 lh-14 fw-600">Servers</h1>
         
