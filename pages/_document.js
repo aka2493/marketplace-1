@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="GoTrip - Tour & Travel React NextJS Template"
+          content="AI Marketplace, Software Marketpalce, Cloud Servers"
         />
         {/* <!-- Google fonts --> */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
