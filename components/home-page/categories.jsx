@@ -1,19 +1,19 @@
 import Link from "next/link";
 import Slider from "react-slick";
-import { homeCategories } from "../../data/homeCategories";
+import { categories } from "../../data/home-categories";
 
-const HomePageCategoriesSection = () => {
+const Categories = () => {
   var settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 7,
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1199,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 5,
         },
       },
 
@@ -33,26 +33,22 @@ const HomePageCategoriesSection = () => {
   };
 
   return (
-    <Slider {...settings} arrows={false}>
-      {homeCategories.slice(0,5).map((item) => (
+    <Slider {...settings}>
+      {categories.map((item) => (
         <div
-          className="col-xl col-md-4 col-sm-6"
+          className="col-xl col-lg-3 col-6"
           key={item.id}
-          data-aos="fade"
-          data-aos-delay={item.dealyAimation}
+          data-aos="fade-up"
+          data-aos-delay={item.delayAnimation}
         >
           <Link
-            href="/"
-            className="tourTypeCard -type-1 d-block rounded-4 bg-blue-1-05 rounded-4"
+            href="/cruise/cruise-list-v2"
+            className="citiesCard -type-5 d-flex items-center sm:flex-column sm:items-start px-20 py-20 sm:px-15 sm:py-20 bg-light-2 rounded-4"
           >
-            <div className="tourTypeCard__content text-center pt-60 pb-24 px-30">
-              <i className={`${item.icon} text-60 sm:text-40 text-blue-1`}></i>
-              <h4 className="text-dark-1 text-18 fw-500 mt-50 md:mt-30">
-                {item.name}
-              </h4>
-              <p className="text-light-1 lh-14 text-14 mt-5">
-                ${item.price}
-              </p>
+            <i className="icon-destination text-24" />
+            <div className="ml-10 sm:ml-0 sm:mt-10">
+              <h4 className="text-16 fw-500">{item.productName}</h4>
+              <p className="text-14">{item.items} items</p>
             </div>
           </Link>
         </div>
@@ -61,4 +57,4 @@ const HomePageCategoriesSection = () => {
   );
 };
 
-export default HomePageCategoriesSection;
+export default Categories;
