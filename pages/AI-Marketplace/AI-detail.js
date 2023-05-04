@@ -65,10 +65,18 @@ return (
             
             </div>
             </div>
-            <div class="col-xl-4  mb-80  d-flex justify-content-center text-center align-center">
-            <button className="button text-center fw-400 text-14 bg-stebr-pink text-white mr-5 h-50 px-15 py-16">Save to Wishlist</button>
+
+            <div class="col-xl-4 mb-30 justify-content-center text-center align-center">
+            <div className="mb-40">
+            <h2 className="text-20 fw-500">Typical Total Price</h2>
+            <div>$50/Monthly</div>
+            </div>
+
+<div className="d-flex justify-content-center">
+            <button className="button text-enter fw-400 text-14 bg-stebr-pink text-white mr-5 h-50 px-15 py-16">Save to Wishlist</button>
             <button className="button text-center fw-400 text-14 bg-dark-4 text-white h-50 px-15 py-16">Contact Seller</button>
-          </div>
+            </div>
+            </div>
           </div>
           {/* End .row */}
         </div>
