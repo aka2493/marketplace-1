@@ -16,14 +16,14 @@ import Image from "next/image";
 import PricingCard from "../../../components/domain-detail/PricingCard";
 import SellerDetails from "../../../components/domain-detail/SellerDetails";
 import FilterTemplateCards from "../../../components/templates/FilterTemplateCards";
-import ProductSpecs from "../../../components/template-detail/product-detail";
+import ProductSpecs from "../../../components/software-detail/product-detail";
 import TabsSection from "../../../components/common2/Tabs/tabPanel";
-import TemplateDescription from "../../../components/template-detail/template-description";
-import TemplateComments from "../../../components/template-detail/template-comments";
-import TemplateLoginCredSection from "../../../components/template-detail/template-login-cred";
-import CustomisationCard from "../../../components/template-detail/customisation-card";
+import TemplateDescription from "../../../components/software-detail/template-description";
+import TemplateComments from "../../../components/software-detail/template-comments";
+import TemplateLoginCredSection from "../../../components/software-detail/template-login-cred";
+import CustomisationCard from "../../../components/software-detail/customisation-card";
 
-const TemplateDetail = () => {
+const SoftwareDetail = () => {
     const [isOpen, setOpen] = useState(false);
     const router = useRouter();
     const [tour, setTour] = useState({});
@@ -62,7 +62,7 @@ const TemplateDetail = () => {
                 <div className="container">
                     <div className="row y-gap-20 justify-between items-end">
                         <div className="col-auto">
-                            <h1 className="text-30 fw-600">Live Event One Page Responsive HTML Template</h1>
+                            <h1 className="text-30 fw-600">Live Event One Page Responsive HTML Software</h1>
                         </div>
 
                         <div className="col-auto">
@@ -228,6 +228,6 @@ const TemplateDetail = () => {
     );
 };
 
-export default dynamic(() => Promise.resolve(TemplateDetail), {
+export default dynamic(() => Promise.resolve(SoftwareDetail), {
     ssr: false,
 });

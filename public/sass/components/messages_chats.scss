@@ -1,0 +1,218 @@
+  
+  .msg-container {
+    padding:0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    height: 700px;
+    margin: 0 20px;
+  }
+   
+  /* === CONVERSATIONS === */
+  
+  .discussions {
+    width: 35%;
+    height: 700px;
+    box-shadow: 0px 8px 10px rgba(0,0,0,0.20);
+    overflow: hidden;
+    background-color: #87a3ec;
+    display: inline-block;
+    padding: 0;
+  }
+  
+  .discussions .discussion {
+    width: 100%;
+    height: 90px;
+    background-color: #FAFAFA;
+    border-bottom: solid 1px #E0E0E0;
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .discussions .message-active {
+    width: 98.5%;
+    height: 90px;
+    background-color: #FFF;
+    border-bottom: solid 1px #E0E0E0;
+  }
+  
+  .discussions .discussion .photo {
+      margin-left:20px;
+      display: block;
+      width: 45px;
+      height: 45px;
+      background: #E6E7ED;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  .online {
+    position: relative;
+    top: 30px;
+    left: 35px;
+    width: 13px;
+    height: 13px;
+    background-color: #8BC34A;
+    border-radius: 13px;
+    border: 3px solid #FAFAFA;
+  }
+  
+  .desc-contact {
+    height: 43px;
+    width:50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .discussions .discussion .name {
+    margin: 0 0 0 20px;
+  }
+  
+  .discussions .discussion .message {
+    margin: 0 0 0 20px;
+  }
+  
+  .timer {
+    margin-left: 25%;
+  }
+  
+  .chat {
+    width: calc(65% - 10px);
+  }
+  
+  .header-chat {
+    height: 90px;
+   // box-shadow: 0px 3px 2px rgba(0,0,0,0.100);
+    display:flex;
+    align-items: center;
+  }
+  
+  .chat .header-chat .icon {
+    margin-left: 30px;
+    color:#515151;
+    font-size: 14px;
+  }
+  
+  .chat .header-chat .name {
+    margin: 0 0 0 20px;
+    text-transform: uppercase;
+  }
+
+  .chat .header-chat .photo {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: #E6E7ED;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+    
+  .chat .messages-chat {
+    padding: 25px;
+    height: 540px;
+  }
+  
+  .chat .messages-chat .message {
+    display:flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .chat .messages-chat .message .photo {
+      display: block;
+      width: 45px;
+      height: 45px;
+      background: #E6E7ED;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  .chat .messages-chat .text {
+    margin: 0 35px;
+    background-color: #f6f6f6;
+    padding: 15px;
+    border-radius: 12px;
+  }
+  
+  .text-only {
+    margin-left: 45px;
+  }
+  
+  .time {
+    margin-bottom:10px;
+    margin-left: 38px;
+  }
+  
+  .response-time {
+    float: right;
+    margin-right: 40px !important;
+  }
+  
+  .response {
+    float: right;
+    margin-right: 0px !important;
+    margin-left:auto; /* flexbox alignment rule */
+  }
+  
+  .response .text {
+    background-color: #e3effd !important;
+  }
+  
+  .footer-chat {
+    height: 70px;
+    display:flex;
+    align-items: center;
+    background-color: transparent;
+    border-top: 2px solid #EEE;
+    
+  }
+  
+  .chat .footer-chat .icon {
+    margin-left: 30px;
+    color:#C0C0C0;
+    font-size: 14pt;
+  }
+
+  .write-message {
+    height: 70px;
+    padding: 10px;
+  }
+  
+  .footer-chat *::-webkit-input-placeholder {
+    color: #C0C0C0;
+    font-size: 13pt;
+  }
+  .footer-chat input *:-moz-placeholder {
+    color: #C0C0C0;
+    font-size: 13pt;
+  }
+  .footer-chat input *::-moz-placeholder {
+    color: #C0C0C0;
+    font-size: 13px;
+  }
+  .footer-chat input *:-ms-input-placeholder {
+    color: #C0C0C0;
+    font-size: 13pt;
+  }
+  
+  .clickable {
+    cursor: pointer;
+  }
+
+  .footer-chat .send-icon {
+    position: absolute;
+    right: 100px;
+    background-color: #4f6ebd;
+    padding: 10px 15px;
+    border-radius: 50%;
+  }

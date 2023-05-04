@@ -42,6 +42,10 @@ export const dashboardItems = [
     routePath: "/dashboard/db-dashboard",
   },
   {
+    name: "Messages",
+    routePath: "/dashboard/db-messages",
+  },
+  {
     name: "Buying Activity",
     routePath: "/dashboard/db-buying-activity",
   },
@@ -50,8 +54,16 @@ export const dashboardItems = [
     routePath: "/dashboard/db-seller-activity",
   },
   {
-    name: "Settings",
-    routePath: "/dashboard/db-settings",
+    name: "My Finance",
+    routePath: "/dashboard/db-finance",
+  },
+  {
+    name: "Account and Security",
+    routePath: "/dashboard/db-security",
+  },
+  {
+    name: "Promotions",
+    routePath: "/dashboard/db-promotions",
   },
   {
     name: "Logout",

@@ -4,7 +4,7 @@ import DefaultFooter from "../../components/footer/default";
 import Header1 from "../../components/header/header-1";
 import Hero1 from "../../components/home-page/searchComponent";
 import BlockGuide from "../../components/block/BlockGuide";
-import TourCategories from "../../components/home-page/TourCategories";
+import HomePageCategoriesSection from "../../components/home-page/categories";
 import PopularProducts from "../../components/home-page/products";
 import Blog3 from '../../components/home-page/Blog3';
 import CallToActions from "../../components/common/CallToActions";
@@ -21,7 +21,7 @@ const Homepage = () => {
             <section className="layout-pt-md layout-pb-md">
                 <div className="container">
                     <div className="row y-gap-30 pt-40 sm:pt-20 item_gap-x30">
-                        <TourCategories />
+                        <HomePageCategoriesSection />
                     </div>
                 </div>
             </section>
@@ -71,8 +71,6 @@ const Homepage = () => {
                     </div>
                 </div>
             </section>
-
-
 
             <section className="layout-pt-lg layout-pb-md" data-aos="fade-up">
                 <div className="container">

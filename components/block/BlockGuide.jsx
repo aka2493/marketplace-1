@@ -49,15 +49,13 @@ const BlockGuide = () => {
         >
           <div className="featureIcon -type-1 ">
             <div className="d-flex justify-center">
-             
               <Image
-              src={item.icon}
-              className="js-lazy"
-                            width={10}
-                            height={10}
-                            alt="image"
-                            
-                          />
+                src={item.icon}
+                className="js-lazy"
+                width={60}
+                height={60}
+                alt="image"
+              />
             </div>
             <div className="text-center mt-30">
               <h4 className="text-18 fw-500">{item.title}</h4>

@@ -1,4 +1,4 @@
-export const tourCategories1 = [
+export const homeCategories = [
   {
     id: 1,
     icon: "icon-nature",

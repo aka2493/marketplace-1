@@ -46,7 +46,7 @@ const FilterSoftwareCards = ({ itemsCount = 8 }) => {
           data-aos-delay={item.delayAnimation}
         >
           <Link
-            href={`/templates/template-detail/${item.id}`}
+            href={`/software-code/software-detail/${item.id}`}
             className="hotelsCard -type-1 hover-inside-slider"
           >
             <div className="hotelsCard__image">
