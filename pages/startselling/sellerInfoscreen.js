@@ -7,7 +7,7 @@ import DefaultFooter from "../../components/footer/default";
 
 import ListingSidebar from "../../components/startSelling/sellerInfo/listing-sidebar";
 import SellerInfoTabs from "../../components/startSelling/sellerInfo/sellerInfoTabs";
-import ListingPagination from "../../components/startSelling/sellerInfo/listingPagination";
+
 
 const sellerInfoscreen = () => {
   const socialContent = [
@@ -151,7 +151,7 @@ const sellerInfoscreen = () => {
                 <SellerInfoTabs />
               </div>
               {/* End .row */}
-              <ListingPagination />
+             
             </div>
             {/* End .col */}
 

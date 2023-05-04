@@ -4,6 +4,7 @@ import { useState } from "react";
 import sellerlistingData from "../../../data/sellerlistingData";
 import SearchBox from "./../../common/SearchBox";
 import Dropdown from "./../../common/Dropdown";
+import ListingPagination from "./listingPagination"
 
 const Listings = () => {
   const [categoryvalue, setcategoryvalue] = useState("Category");
@@ -64,6 +65,7 @@ const Listings = () => {
             </Link>
           </div>
         ))}
+        <ListingPagination/>
       </div>
       {/* End .row */}
     </>

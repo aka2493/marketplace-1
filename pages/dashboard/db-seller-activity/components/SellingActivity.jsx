@@ -1,4 +1,4 @@
-import TabsSection from "../../../../components/template-detail/Tabs/tabPanel";
+import TabsSection from "../../../../components/common2/Tabs/tabPanel";
 import CustomerOrderTabComponent from "./customerOrder.component";
 import AuctionStatusTabComponent from "./auctionStatus.component";
 import ListingStatusTabComponent from "./listingStatus.component";

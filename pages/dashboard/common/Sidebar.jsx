@@ -23,7 +23,7 @@ const Sidebar = () => {
     {
       id: 3,
       icon: "/img/dashboard/sidebar/booking.svg",
-      name: " Buying Activity",
+      name: "Buying Activity",
       routePath: "/dashboard/db-buying-activity",
     },
     {
@@ -35,19 +35,19 @@ const Sidebar = () => {
     {
       id: 5,
       icon: "/img/dashboard/sidebar/gear.svg",
-      name: " My Finance",
+      name: "My Finance",
       routePath: "/dashboard/db-finance",
     },
     {
       id: 6,
       icon: "/img/dashboard/sidebar/gear.svg",
       name: "Account and Security",
-      routePath: "/dashboard/db-settings",
+      routePath: "/dashboard/db-security",
     },
     {
       id: 7,
       icon: "/img/dashboard/sidebar/log-out.svg",
-      name: " Promotions",
+      name: "Promotions",
       routePath: "/dashboard/db-promotions",
     },
   ];

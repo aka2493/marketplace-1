@@ -10,7 +10,7 @@ const ProductSpecs = ({ }) => {
                     </div>
                     <div className="lh-16 pt-10">
                         <p className="text-dark-1 text-18 fw-400">Created: Jun 13, 2019</p>
-                        <p className="text-dark-1 text-18 fw-400">Compatible With: Wordpess + HTML + CSS</p>
+                        <p className="text-dark-1 text-18 fw-400">Compatible With: Wordpess + HTML +  CSS</p>
                         <p className="text-dark-1 text-18 fw-400">File Type: HTML</p>
                         <p className="text-dark-1 text-18 fw-400">File Size: 20.2 KB</p>
                         <p className="text-dark-1 text-18 fw-400">Dimensions: 1300 x 1300 px</p>

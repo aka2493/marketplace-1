@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Slider from "react-slick";
-import { tourCategories1 } from "../../data/tourCategories";
+import { homeCategories } from "../../data/homeCategories";
 
-const TourCategories = () => {
+const HomePageCategoriesSection = () => {
   var settings = {
     dots: true,
     infinite: true,
@@ -34,7 +34,7 @@ const TourCategories = () => {
 
   return (
     <Slider {...settings} arrows={false}>
-      {tourCategories1.slice(0,5).map((item) => (
+      {homeCategories.slice(0,5).map((item) => (
         <div
           className="col-xl col-md-4 col-sm-6"
           key={item.id}
@@ -61,4 +61,4 @@ const TourCategories = () => {
   );
 };
 
-export default TourCategories;
+export default HomePageCategoriesSection;
